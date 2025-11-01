@@ -1,41 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
 
-    <!-- CSS reset, common -->
-    <link rel="stylesheet" href="./assets/styles/reset.css" />
-    <link rel="stylesheet" href="./assets/styles/common.css" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
 
-    <!-- CSS libraries -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+  <!-- CSS reset, common -->
+  <link rel="stylesheet" href="./assets/styles/reset.css" />
+  <link rel="stylesheet" href="./assets/styles/common.css" />
 
-    <!-- CSS components  -->
-    <link rel="stylesheet" href="./assets/styles/header.css" />
-    <link rel="stylesheet" href="./assets/styles/footer.css" />
+  <!-- CSS libraries -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <!-- CSS main -->
-    <link rel="stylesheet" href="./assets/styles/artist.css" />
-  </head>
-  <body>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+  <!-- CSS components  -->
+  <link rel="stylesheet" href="./assets/styles/header.css" />
+  <link rel="stylesheet" href="./assets/styles/footer.css" />
+
+  <!-- CSS main -->
+  <link rel="stylesheet" href="./assets/styles/about.css" />
+</head>
+
+<body>
+  <header>
+    <img class="banner" src="./assets/img/baner.png" alt="">
+    <div class="container">
+      <div class="menu">
+        <div class="logo">
+          <img src="./assets/img/Circle.png" alt="">
+          <span>Safe Tour</span>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Destinations</a></li>
+            <li><a href="">Blog</a></li>
+            <li><a href="">Page</a></li>
+          </ul>
+        </nav>
+        <button class="btn">Contact us</button>
+      </div>
+    </div>
+
+    <div class="banner-content">
+      <h1>About us</h1>
+    </div>
+  </header>
+
+  <main>
+    <section class="about-text container">
+      <div class="text">
+        <h4>Who we are</h4>
+        <h2>We are best <br> tourist operator</h2>
+        <p>
+          We are a small family owned, award-winning operation that specializes in providing highly
+          personalized
+          service to our discerning clientele. Our goal is to exceed your expectations and make your trip an
+          unforgettable experience.
+        </p>
+      </div>
+      <div class="image">
+        <img src="./assets/img/1.png" alt="">
+      </div>
+    </section>
+
+    <section class="about-text1 container">
+      <div class="image">
+        <img src="./assets/img/2.png" alt="">
+      </div>
+      <div class="text">
+        <h2>Why Choose Us?</h2>
+        <p>
+          We make all the process easy. Dummy text ever since the is, when an unknown printer took.
+        </p>
+        <ul class="features">
+          <li>
+            <img src="./assets/img/Iocn 1.png" alt="">
+            <div>
+              <h5>We make all the process easy</h5>
+              <p>A galley of type and scrambled it to make a type when an unknown printer took</p>
+            </div>
+          </li>
+          <li>
+            <img src="./assets/img/Iocn 2.png" alt="">
+            <div>
+              <h5>We make all the process easy</h5>
+              <p>A galley of type and scrambled it to make a type when an unknown printer took</p>
+            </div>
+          </li>
+          <li>
+            <img src="./assets/img/Icon 3.png" alt="">
+            <div>
+              <h5>We make all the process easy</h5>
+              <p>A galley of type and scrambled it to make a type when an unknown printer took</p>
+            </div>
+          </li>
+
+
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>

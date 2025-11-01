@@ -28,25 +28,4 @@ img {
   object-fit: cover;
 }
 
-.btt {
-  padding: 18px 20px;
-  border-radius: 20px;
-  border: 2px solid var(--primary-color);
-  transition: all ease-in-out 0.5s;
-}
 
-.btt-primary {
-  background-color: var(--primary-color);
-}
-
-.btt-primary:hover {
-  background-color: transparent;
-}
-
-.btt-secondary {
-  background-color: transparent;
-}
-
-.btt-secondary:hover {
-  background-color: var(--primary-color);
-}
