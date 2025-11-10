@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Safe Tour</title>
+
+    <!-- CSS reset, common -->
+    <link rel="stylesheet" href="./assets/styles/reset.css" />
+    <link rel="stylesheet" href="./assets/styles/common.css" />
+
+    <!-- CSS libraries -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- CSS components  -->
+    <link rel="stylesheet" href="./assets/styles/header.css" />
+    <link rel="stylesheet" href="./assets/styles/footer.css" />
+
+    <!-- CSS main -->
+    <link rel="stylesheet" href="./assets/styles/home.css" />
+  </head>
+
+  <body>
+    <!-- ============ Header ============ -->
+    <header class="site-header">
+      <div class="container">
+        <nav
+          class="nav navbar navbar-expand-lg align-items-center"
+          aria-label="Primary"
+        >
+          <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+            <img
+              src="./assets/img/logo.png"
+              alt="Safe Tour logo"
+              width="28"
+              height="28"
+            />
+            <span class="fw-semibold"
+              >Safe Tour <span class="text-primary">.</span></span
+            >
+          </a>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#mainNav"
+            aria-controls="mainNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="fa-solid fa-bars"></i>
+          </button>
+
+          <div id="mainNav" class="collapse navbar-collapse">
+            <ul class="navbar-nav ms-auto gap-lg-3">
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Home</a>
+              </li>
+              <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Destinations</a>
+              </li>
+              <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Pages</a></li>
+            </ul>
+            <div class="ms-lg-4">
+              <a class="btn btn-outline-primary" href="#contact">Contact Us</a>
+            </div>
+          </div>
+        </nav>
+      </div>
+
+      <!-- Hero -->
+      <div
+        class="hero container py-5 py-lg-6 d-grid d-lg-flex align-items-center gap-4"
+      >
+        <div class="hero__content col-lg-6">
+          <h1 class="hero__title display-5 fw-bold">
+            Let’s Make Your Best Trip Ever
+          </h1>
+          <p class="hero__desc text-secondary mt-3">
+            Plan and book your perfect trip with expert advice, travel tips,
+            destination information and inspiration from us.
+          </p>
+
+          <div class="d-flex align-items-center gap-3 mt-4">
+            <a href="#search" class="btn btn-primary">
+              <i class="fa-solid fa-compass me-2"></i> Discover Now
+            </a>
+            <a href="#about" class="btn btn-link p-0">
+              <i class="fa-solid fa-play me-2"></i> Learn more
+            </a>
+          </div>
+
+          <!-- mini stats -->
+          <ul class="hero__stats list-unstyled d-flex flex-wrap gap-4 mt-4">
+            <li class="d-flex align-items-center gap-3">
+              <span class="badge rounded-circle p-3 bg-warning-subtle"
+                ><i class="fa-solid fa-award"></i
+              ></span>
+              <div>
+                <h3 class="h4 mb-0">12</h3>
+                <small class="text-secondary">Years Experiences</small>
+              </div>
+            </li>
+            <li class="d-flex align-items-center gap-3">
+              <span class="badge rounded-circle p-3 bg-warning-subtle"
+                ><i class="fa-solid fa-users"></i
+              ></span>
+              <div>
+                <h3 class="h4 mb-0">24k+</h3>
+                <small class="text-secondary">Happy Travelers</small>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <figure class="hero__visual col-lg-6 position-relative m-0">
+          <img
+            src="./assets/img/hero.png"
+            alt="Traveler with suitcase"
+            class="img-fluid rounded-4"
+          />
+          <figcaption class="visually-hidden">Trip mood hero visual</figcaption>
+
+          <!-- floating box -->
+          <div
+            class="hero__badge position-absolute top-0 end-0 translate-middle rounded-3 p-3 bg-white shadow-sm"
+          >
+            <div class="d-flex align-items-center gap-2">
+              <i class="fa-solid fa-star text-warning"></i>
+              <span class="small">Top Rated</span>
+            </div>
+          </div>
+        </figure>
+      </div>
+
+      <!-- Search bar -->
+      <section
+        id="search"
+        class="search container translate-middle-y bg-white shadow-sm p-3 p-md-4 rounded-4"
+      >
+        <form class="row g-3 align-items-end" aria-label="Search tours">
+          <div class="col-12 col-md-4">
+            <label for="location" class="form-label">Location</label>
+            <select id="location" class="form-select">
+              <option>Bali, Indonesia</option>
+              <option>Bangkok, Thailand</option>
+              <option>Tokyo, Japan</option>
+            </select>
+          </div>
+          <div class="col-6 col-md-3">
+            <label for="city" class="form-label">City</label>
+            <select id="city" class="form-select">
+              <option>Prambanan</option>
+              <option>Ubud</option>
+            </select>
+          </div>
+          <div class="col-6 col-md-3">
+            <label for="guests" class="form-label">Guests</label>
+            <select id="guests" class="form-select">
+              <option>2 Persons</option>
+              <option>4 Persons</option>
+              <option>8 Persons</option>
+            </select>
+          </div>
+          <div class="col-12 col-md-2 d-grid">
+            <button type="submit" class="btn btn-primary">
+              <i class="fa-solid fa-magnifying-glass me-2"></i> Search
+            </button>
+          </div>
+        </form>
+      </section>
+    </header>
+
+    <!-- ============ Main ============ -->
+    <main>
+      <!-- Our Best Tour -->
+      <section id="best-tours" class="section container py-6">
+        <div
+          class="d-lg-flex justify-content-between align-items-end gap-4 mb-4"
+        >
+          <div>
+            <h2 class="h1">Our Best Tour</h2>
+            <p class="text-secondary mb-0">
+              These are locations where it's easy to feel healthier, happier and
+              less stressed than in America.
+            </p>
+          </div>
+          <a href="#" class="btn btn-outline-secondary">See all tours</a>
+        </div>
+
+        <ul class="cards list-unstyled row g-4">
+          <!-- card -->
+          <li class="col-12 col-sm-6 col-lg-3">
+            <article class="card h-100 border-0 shadow-sm">
+              <img
+                class="card-img-top"
+                src="./assets/img/tours/cairns.jpg"
+                alt="Cairns travel"
+              />
+              <div class="card-body">
+                <div
+                  class="d-flex justify-content-between align-items-center mb-2"
+                >
+                  <span class="badge bg-warning-subtle text-dark"
+                    >$150/day</span
+                  >
+                  <span class="small text-secondary"
+                    ><i class="fa-regular fa-clock me-1"></i>5 Days</span
+                  >
+                </div>
+                <h3 class="h5 card-title mb-2">Cairns travel</h3>
+                <p class="small text-secondary mb-0">
+                  <i class="fa-solid fa-location-dot me-1"></i> Cairns QLD,
+                  Australia
+                </p>
+              </div>
+              <div
+                class="card-footer bg-white d-flex justify-content-between small"
+              >
+                <span
+                  ><i class="fa-regular fa-calendar me-1"></i> Oct 28,
+                  2021</span
+                >
+                <a href="#" class="link-primary">Details</a>
+              </div>
+            </article>
+          </li>
+
+          <!-- Duplicate three more cards for layout parity -->
+          <li class="col-12 col-sm-6 col-lg-3">
+            <article class="card h-100 border-0 shadow-sm">
+              <img
+                class="card-img-top"
+                src="./assets/img/tours/sahara.jpg"
+                alt="Sahara dunes"
+              />
+              <div class="card-body">
+                <div
+                  class="d-flex justify-content-between align-items-center mb-2"
+                >
+                  <span class="badge bg-warning-subtle text-dark"
+                    >$129/day</span
+                  >
+                  <span class="small text-secondary"
+                    ><i class="fa-regular fa-clock me-1"></i>4 Days</span
+                  >
+                </div>
+                <h3 class="h5 card-title mb-2">Sahara Dunes</h3>
+                <p class="small text-secondary mb-0">
+                  <i class="fa-solid fa-location-dot me-1"></i> Morocco
+                </p>
+              </div>
+              <div
+                class="card-footer bg-white d-flex justify-content-between small"
+              >
+                <span
+                  ><i class="fa-regular fa-calendar me-1"></i> Jan 12,
+                  2022</span
+                >
+                <a href="#" class="link-primary">Details</a>
+              </div>
+            </article>
+          </li>
+
+          <li class="col-12 col-sm-6 col-lg-3">
+            <article class="card h-100 border-0 shadow-sm">
+              <img
+                class="card-img-top"
+                src="./assets/img/tours/bali.jpg"
+                alt="Bali beaches"
+              />
+              <div class="card-body">
+                <div
+                  class="d-flex justify-content-between align-items-center mb-2"
+                >
+                  <span class="badge bg-warning-subtle text-dark">$99/day</span>
+                  <span class="small text-secondary"
+                    ><i class="fa-regular fa-clock me-1"></i>3 Days</span
+                  >
+                </div>
+                <h3 class="h5 card-title mb-2">Bali Beaches</h3>
+                <p class="small text-secondary mb-0">
+                  <i class="fa-solid fa-location-dot me-1"></i> Indonesia
+                </p>
+              </div>
+              <div
+                class="card-footer bg-white d-flex justify-content-between small"
+              >
+                <span
+                  ><i class="fa-regular fa-calendar me-1"></i> Feb 08,
+                  2022</span
+                >
+                <a href="#" class="link-primary">Details</a>
+              </div>
+            </article>
+          </li>
+
+          <li class="col-12 col-sm-6 col-lg-3">
+            <article class="card h-100 border-0 shadow-sm">
+              <img
+                class="card-img-top"
+                src="./assets/img/tours/namibia.jpg"
+                alt="Namibia canyons"
+              />
+              <div class="card-body">
+                <div
+                  class="d-flex justify-content-between align-items-center mb-2"
+                >
+                  <span class="badge bg-warning-subtle text-dark"
+                    >$175/day</span
+                  >
+                  <span class="small text-secondary"
+                    ><i class="fa-regular fa-clock me-1"></i>6 Days</span
+                  >
+                </div>
+                <h3 class="h5 card-title mb-2">Namibia Canyons</h3>
+                <p class="small text-secondary mb-0">
+                  <i class="fa-solid fa-location-dot me-1"></i> Namibia
+                </p>
+              </div>
+              <div
+                class="card-footer bg-white d-flex justify-content-between small"
+              >
+                <span
+                  ><i class="fa-regular fa-calendar me-1"></i> Mar 21,
+                  2022</span
+                >
+                <a href="#" class="link-primary">Details</a>
+              </div>
+            </article>
+          </li>
+        </ul>
+      </section>
+
+      <!-- Why Choose Us -->
+      <section
+        id="why"
+        class="section container py-6 d-grid d-lg-flex align-items-center gap-5"
+      >
+        <figure class="why__visual col-lg-6 m-0">
+          <img
+            src="./assets/img/why.jpg"
+            alt="Happy travelers"
+            class="img-fluid rounded-4"
+          />
+        </figure>
+
+        <div class="why__content col-lg-6">
+          <h2 class="h1">Why Choose Us</h2>
+          <p class="text-secondary">
+            We make all the process easy. Dummy text ever since the is, when an
+            unknown printer took.
+          </p>
+          <ul class="list-unstyled d-grid gap-4 mt-4">
+            <li class="d-flex gap-3">
+              <i class="fa-solid fa-bolt fs-4 text-warning"></i>
+              <div>
+                <h3 class="h5 mb-1">We make all the process easy</h3>
+                <p class="text-secondary mb-0">
+                  A galley of type and scrambled it to make a type when an
+                  unknown printer took.
+                </p>
+              </div>
+            </li>
+            <li class="d-flex gap-3">
+              <i class="fa-solid fa-user-lock fs-4 text-warning"></i>
+              <div>
+                <h3 class="h5 mb-1">Private & Customized Tours</h3>
+                <p class="text-secondary mb-0">
+                  Tailor-made experiences with flexible itineraries.
+                </p>
+              </div>
+            </li>
+            <li class="d-flex gap-3">
+              <i class="fa-solid fa-passport fs-4 text-warning"></i>
+              <div>
+                <h3 class="h5 mb-1">Immigration & Passport Help</h3>
+                <p class="text-secondary mb-0">
+                  Dedicated support for visa, passport and entry requirements.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Trending 2022 (slider-ready skeleton) -->
+      <section id="trending" class="section container py-6">
+        <div class="d-flex justify-content-between align-items-end mb-4">
+          <div>
+            <h2 class="h1">Trending 2022</h2>
+            <p class="text-secondary mb-0">
+              Most brilliant reasons Entrada should be your one-stop-shop!
+            </p>
+          </div>
+          <div class="d-flex gap-2">
+            <button
+              class="btn btn-outline-secondary btn-sm"
+              type="button"
+              aria-label="Prev"
+              data-carousel="prev"
+            >
+              <i class="fa-solid fa-arrow-left"></i>
+            </button>
+            <button
+              class="btn btn-outline-secondary btn-sm"
+              type="button"
+              aria-label="Next"
+              data-carousel="next"
+            >
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="row g-4" data-carousel="track">
+          <!-- item -->
+          <div class="col-12 col-sm-6 col-lg-3">
+            <article class="card h-100 border-0 shadow-sm">
+              <img
+                src="./assets/img/trending/hiking.jpg"
+                class="card-img-top"
+                alt="Mountain Hiking Tour"
+              />
+              <div class="card-body">
+                <h3 class="h5 mb-1">Mountain Hiking Tour</h3>
+                <p class="small text-secondary mb-0">
+                  12 Places · 3 Activities
+                </p>
+              </div>
+            </article>
+          </div>
+          <!-- Duplicate 3 more items -->
+          <div class="col-12 col-sm-6 col-lg-3">
+            <article class="card h-100 border-0 shadow-sm">
+              <img
+                src="./assets/img/trending/paradise.jpg"
+                class="card-img-top"
+                alt="Paradise Island"
+              />
+              <div class="card-body">
+                <h3 class="h5 mb-1">Paradise Island</h3>
+                <p class="small text-secondary mb-0">
+                  10 Places · 4 Activities
+                </p>
+              </div>
+            </article>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-3">
+            <article class="card h-100 border-0 shadow-sm">
+              <img
+                src="./assets/img/trending/surf.jpg"
+                class="card-img-top"
+                alt="Surf & Sun"
+              />
+              <div class="card-body">
+                <h3 class="h5 mb-1">Surf & Sun</h3>
+                <p class="small text-secondary mb-0">8 Places · 5 Activities</p>
+              </div>
+            </article>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-3">
+            <article class="card h-100 border-0 shadow-sm">
+              <img
+                src="./assets/img/trending/snow.jpg"
+                class="card-img-top"
+                alt="Snow Adventures"
+              />
+              <div class="card-body">
+                <h3 class="h5 mb-1">Snow Adventures</h3>
+                <p class="small text-secondary mb-0">9 Places · 3 Activities</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Top Destination -->
+      <section id="destinations" class="section container py-6">
+        <div class="d-flex justify-content-between align-items-end mb-4">
+          <h2 class="h1 mb-0">Top Destination</h2>
+          <a href="#" class="btn btn-outline-secondary">Explore More</a>
+        </div>
+
+        <ul class="list-unstyled row g-4">
+          <li class="col-12 col-md-6 col-lg-3">
+            <article class="card border-0 shadow-sm h-100">
+              <img
+                src="./assets/img/destinations/1.jpg"
+                class="card-img-top"
+                alt="Santorini, Greece"
+              />
+              <div class="card-body">
+                <h3 class="h5 mb-1">Santorini</h3>
+                <p class="small text-secondary mb-0">Greece</p>
+              </div>
+            </article>
+          </li>
+          <li class="col-12 col-md-6 col-lg-3">
+            <article class="card border-0 shadow-sm h-100">
+              <img
+                src="./assets/img/destinations/2.jpg"
+                class="card-img-top"
+                alt="Kyoto, Japan"
+              />
+              <div class="card-body">
+                <h3 class="h5 mb-1">Kyoto</h3>
+                <p class="small text-secondary mb-0">Japan</p>
+              </div>
+            </article>
+          </li>
+          <li class="col-12 col-md-6 col-lg-3">
+            <article class="card border-0 shadow-sm h-100">
+              <img
+                src="./assets/img/destinations/3.jpg"
+                class="card-img-top"
+                alt="Cappadocia, Turkey"
+              />
+              <div class="card-body">
+                <h3 class="h5 mb-1">Cappadocia</h3>
+                <p class="small text-secondary mb-0">Turkey</p>
+              </div>
+            </article>
+          </li>
+          <li class="col-12 col-md-6 col-lg-3">
+            <article class="card border-0 shadow-sm h-100">
+              <img
+                src="./assets/img/destinations/4.jpg"
+                class="card-img-top"
+                alt="Bali, Indonesia"
+              />
+              <div class="card-body">
+                <h3 class="h5 mb-1">Bali</h3>
+                <p class="small text-secondary mb-0">Indonesia</p>
+              </div>
+            </article>
+          </li>
+        </ul>
+      </section>
+
+      <!-- Your Trips / Perks -->
+      <section id="perks" class="section container py-6">
+        <h2 class="h1 mb-4 text-center">Your Trips</h2>
+        <ul class="list-unstyled row g-4">
+          <li class="col-12 col-sm-6 col-lg-3">
+            <div class="p-4 bg-white shadow-sm rounded-4 h-100 text-center">
+              <i class="fa-solid fa-hotel fs-2 mb-3 text-warning"></i>
+              <h3 class="h6 mb-1">Hotel Booking</h3>
+              <p class="text-secondary small mb-0">
+                Handpicked stays with great value.
+              </p>
+            </div>
+          </li>
+          <li class="col-12 col-sm-6 col-lg-3">
+            <div class="p-4 bg-white shadow-sm rounded-4 h-100 text-center">
+              <i class="fa-solid fa-plane-departure fs-2 mb-3 text-warning"></i>
+              <h3 class="h6 mb-1">Flight Deals</h3>
+              <p class="text-secondary small mb-0">
+                Best routes & prices curated.
+              </p>
+            </div>
+          </li>
+          <li class="col-12 col-sm-6 col-lg-3">
+            <div class="p-4 bg-white shadow-sm rounded-4 h-100 text-center">
+              <i class="fa-solid fa-umbrella-beach fs-2 mb-3 text-warning"></i>
+              <h3 class="h6 mb-1">Activities</h3>
+              <p class="text-secondary small mb-0">
+                From culture to adventure.
+              </p>
+            </div>
+          </li>
+          <li class="col-12 col-sm-6 col-lg-3">
+            <div class="p-4 bg-white shadow-sm rounded-4 h-100 text-center">
+              <i class="fa-solid fa-headset fs-2 mb-3 text-warning"></i>
+              <h3 class="h6 mb-1">24/7 Support</h3>
+              <p class="text-secondary small mb-0">
+                We’re here whenever you need.
+              </p>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <!-- ============ Footer ============ -->
+    <footer id="contact" class="site-footer border-top mt-6">
+      <div class="container py-5">
+        <div class="row g-4">
+          <div class="col-12 col-lg-6">
+            <h2 class="h4">Subscribe to our newsletter</h2>
+            <form class="d-flex gap-2 mt-3" aria-label="Newsletter signup">
+              <label for="email" class="visually-hidden">Email</label>
+              <input
+                id="email"
+                type="email"
+                class="form-control"
+                placeholder="Enter your email"
+                required
+              />
+              <button class="btn btn-primary" type="submit">Subscribe</button>
+            </form>
+          </div>
+          <div class="col-12 col-lg-6 text-lg-end">
+            <p class="text-secondary mb-0">
+              &copy; <span id="y"></span> Safe Tour. All rights reserved.
+            </p>
+          </div>
+        </div>
+      </div>
+      <script>
+        document.getElementById("y").textContent = new Date().getFullYear();
+      </script>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-9ndCyUa6mY2H1L1Q9gLQ9lP6Jb3G5p2Q2J7oB2d2zqJt9mLk7g8u"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
