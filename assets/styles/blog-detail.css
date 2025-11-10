@@ -1,6 +1,6 @@
 /* tiến */
-/* blog-section */
-.blog-section{
+/* main */
+.main-container{
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -12,12 +12,41 @@
   height: auto;
   border-radius: 10px;
 }
-.blog-left h2{
+.blog-left h1{
   color: #000000;
   font-size: 40px;
   font-weight: 700;
   margin-top: 24px;
 }
+.blog-title h2{
+  margin-top: 30px;
+  font-size: 24px;
+  color: #FF7B29;
+}
+.blog-title p{
+  margin-top: 20px;
+  font-size: 16px;
+  color: #676A6C;
+}
+.card{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 26px;
+  border: none;
+}
+.card img{
+  margin-top: 30px;
+  width: 100%;
+  height: 199px;
+}
+.main-img {
+  margin-top: 30px;
+  width: 626px;
+  height: 416px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
 .blog-right{
   background-color: #ECECEC;
   border-radius: 10px;
