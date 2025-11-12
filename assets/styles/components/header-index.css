@@ -1,0 +1,40 @@
+/* HEADER: BEGIN */
+.site-header-bar {
+  display: flex;
+  margin: 20px 0;
+  justify-content: space-between;
+  align-items: center;
+  .brand-logo {
+    width: 36px;
+    height: 36px;
+  }
+  .brand {
+    display: flex;
+    gap: 10px;
+    text-decoration: none;
+    color: #000;
+    .brand-name {
+      font-size: 24px;
+      font-weight: bold;
+    }
+    .brand-dot {
+      color: #ff7b29;
+    }
+  }
+  button {
+    background-color: var(--scd-color);
+    width: 131px;
+    height: 48px;
+    border-radius: 8px;
+    color: #fff;
+    border: none;
+  }
+}
+
+.nav-list {
+  display: flex;
+  a {
+    color: #000;
+  }
+}
+/* HEADER: END */

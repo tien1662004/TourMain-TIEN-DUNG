@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Safe Tour</title>
+
+    <!-- CSS reset, common -->
+    <link rel="stylesheet" href="./assets/styles/reset.css" />
+    <link rel="stylesheet" href="./assets/styles/common.css" />
 
     <!-- CSS libraries -->
     <link
@@ -21,7 +24,7 @@
     />
 
     <!-- CSS components  -->
-    <link rel="stylesheet" href="./assets/styles/components/header.css" />
+    <link rel="stylesheet" href="./assets/styles/components/header-index.css" />
     <link rel="stylesheet" href="./assets/styles/components/footer.css" />
 
     <!-- CSS main -->
@@ -61,7 +64,7 @@
         <button class="btt-secondary" href="#contact">Contact us</button>
       </div>
 
-      <!-- ================= Hero ================= -->
+      <!--  Hero  -->
       <section class="hero container" id="about" aria-label="Hero">
         <div class="hero-content">
           <div class="hero-inf">
@@ -137,7 +140,7 @@
         </div>
       </section>
 
-      <!-- ================= Search Bar ================= -->
+      <!-- Search Bar -->
       <section id="search" class="search container" aria-label="Search tours">
         <form class="search-form">
           <div class="search-field">
@@ -174,7 +177,7 @@
       </section>
     </header>
 
-    <!-- ================= Main ================= -->
+    <!-- Main -->
     <main id="main-content">
       <!-- Our Best Tour -->
       <section
@@ -303,11 +306,7 @@
       </section>
 
       <!-- Why Choose Us -->
-      <section
-        id="why"
-        class="why-choose container"
-        aria-labelledby="why-title"
-      >
+      <section class="why-choose container" aria-labelledby="why-title">
         <figure class="why-visual">
           <img
             style="width: 436px; height: 518px; border-radius: 64px"
@@ -360,11 +359,7 @@
       </section>
 
       <!-- Trending -->
-      <section
-        id="trending"
-        class="section trending"
-        aria-labelledby="trending-title"
-      >
+      <section class="section trending" aria-labelledby="trending-title">
         <div class="trending-head container">
           <div>
             <h2 id="trending-title" class="section-title">Trending 2025</h2>
@@ -486,7 +481,6 @@
 
       <!-- Top Destination -->
       <section
-        id="destinations"
         class="section destinations container"
         aria-labelledby="destinations-title"
       >
@@ -504,59 +498,89 @@
             <article>
               <img
                 class="destination-card-image"
-                src="./assets/img/Location 1.png"
+                src="./assets/img/location1.png"
                 alt=""
               />
+              <p class="des-rate">3.5</p>
+              <div class="des-desc">
+                <h2>Vientam</h2>
+                <p>Worefall</p>
+              </div>
             </article>
           </div>
 
-          <div class="card destination-card i2">
+          <div class="destination-card i2">
             <article>
               <img
                 class="destination-card-image"
-                src="./assets/img/Location 2.png"
+                src="./assets/img/location2.png"
                 alt=""
               />
+              <p class="des-rate">3.5</p>
+              <div class="des-desc">
+                <h2>Vientam</h2>
+                <p>Worefall</p>
+              </div>
             </article>
           </div>
 
-          <div class="card destination-card i3">
+          <div class="destination-card i3">
             <article>
               <img
                 class="destination-card-image"
-                src="./assets/img/Location 3.png"
+                src="./assets/img/location3.png"
                 alt=""
               />
+              <p class="des-rate">3.5</p>
+              <div class="des-desc">
+                <h2>Vientam</h2>
+                <p>Worefall</p>
+              </div>
             </article>
           </div>
 
-          <div class="card destination-card i4">
+          <div class="destination-card i4">
             <article>
               <img
                 class="destination-card-image"
-                src="./assets/img/Location 4.png"
+                src="./assets/img/location4.png"
                 alt=""
               />
+              <p class="des-rate">3.5</p>
+              <div class="des-desc">
+                <h2>Vientam</h2>
+                <p>Worefall</p>
+              </div>
             </article>
           </div>
 
-          <div class="card destination-card i5">
+          <div class="destination-card i5">
             <article>
               <img
                 class="destination-card-image"
-                src="./assets/img/Location 5.png"
+                src="./assets/img/location5.png"
                 alt=""
               />
+              <p class="des-rate">3.5</p>
+              <div class="des-desc">
+                <h2>Vientam</h2>
+                <p>Worefall</p>
+              </div>
             </article>
           </div>
 
-          <div class="card destination-card i6">
+          <div class="destination-card i6">
             <article>
               <img
                 class="destination-card-image"
-                src="./assets/img/Location 6.png"
+                src="./assets/img/location6.png"
                 alt=""
               />
+              <p class="des-rate">3.5</p>
+              <div class="des-desc">
+                <h2>Vientam</h2>
+                <p>Worefall</p>
+              </div>
             </article>
           </div>
         </div>
@@ -564,11 +588,10 @@
 
       <!-- Tour Trips -->
       <section
-        id="tour-trip"
         class="section tour-trips container"
         aria-labelledby="tour-trip-title"
       >
-        <h2 class="tour-trip-title">Your Trips</h2>
+        <h2 class="tour-trip-titlee">Tour Trips</h2>
         <div class="tour-trip-grid">
           <div class="tour-trip">
             <img
@@ -676,106 +699,161 @@
       </section>
 
       <!-- Articles & Travel Guides -->
-      <section
-        id="guides"
-        class="section guides"
-        aria-labelledby="guides-title"
-      >
-        <h2 id="guides-title" class="section-title">
-          Articles & Travel Guides
-        </h2>
+      <section class="section guides container">
+        <div class="guides-title">
+          <h2>Articles & Travel Guidings</h2>
+          <p>
+            Travel has helped us to understand the meaning of life and it has
+            helped us become <br />better people. Each time we travel, we see
+            the world with new eyes.
+          </p>
+          <div class="vector"></div>
+        </div>
         <div class="guides-grid">
-          <article class="guide">
-            <img class="guide-image" src="" alt="Sunset in desert" />
-            <h3 class="guide-title">
-              <a href="#">How to pick your first desert tour</a>
-            </h3>
-            <p class="guide-excerpt">
-              Quick tips to choose the right route, season and gear…
-            </p>
-          </article>
-          <article class="guide">
-            <img class="guide-image" src="" alt="City at night" />
-            <h3 class="guide-title">
-              <a href="#">Budget cities you'll love in 2025</a>
-            </h3>
-            <p class="guide-excerpt">
-              Where your money goes further without sacrificing fun…
-            </p>
-          </article>
-          <article class="guide">
-            <img class="guide-image" src="" alt="Hiking trail" />
-            <h3 class="guide-title">
-              <a href="#">Beginner's guide to hiking safely</a>
-            </h3>
-            <p class="guide-excerpt">
-              Essential checklist before you hit the trail…
-            </p>
-          </article>
+          <div class="guides-grid-left">
+            <article class="guide">
+              <img class="guide-image" src="./assets/img/travel1.jpg" alt="" />
+              <div class="guide-time">
+                <div class="guide-desc">
+                  <h3 class="guide-title">
+                    The real voyage does not consist in seeking new
+                  </h3>
+                  <p class="guide-excerpt">
+                    Excited him now natural saw passage offices you minuter. At
+                    by asked being court hopes.
+                  </p>
+                </div>
+                <span>Jun 1, 2021</span>
+              </div>
+            </article>
+          </div>
+          <div class="guides-grid-right">
+            <article class="guide">
+              <img class="guide-image" src="./assets/img/travel2.jpg" alt="" />
+              <div class="guide-desc">
+                <h3 class="guide-title">
+                  Mountains is always right destination.
+                </h3>
+                <p class="guide-excerpt">
+                  Farther so friends am to detract forbade
+                </p>
+                <span>Jun 1, 2021</span>
+              </div>
+            </article>
+            <article class="guide">
+              <img class="guide-image" src="./assets/img/travel3.png" alt="" />
+              <div class="guide-desc">
+                <h3 class="guide-title">
+                  Here Our's Life is either a daring adventure.
+                </h3>
+                <p class="guide-excerpt">
+                  One of the programs is Save Our I have personally.
+                </p>
+                <span>Jun 1, 2021</span>
+              </div>
+            </article>
+            <article class="guide">
+              <img class="guide-image" src="./assets/img/travel4.png" alt="" />
+              <div class="guide-desc">
+                <h3 class="guide-title">
+                  Here Our's Life is either a daring adventure.
+                </h3>
+                <p class="guide-excerpt">
+                  life is either a daring adventure or it's nothing
+                </p>
+                <span>Jun 1, 2021</span>
+              </div>
+            </article>
+          </div>
         </div>
       </section>
 
       <!-- Newsletter -->
       <section
-        id="newsletter"
-        class="section newsletter"
+        class="section newsletter container"
         aria-labelledby="newsletter-title"
       >
         <h2 id="newsletter-title" class="section-title">
           Subscribe to our newsletter
         </h2>
+        <p>
+          Reciev latest news, update, and many other things <br />every week.
+        </p>
         <form class="newsletter-form">
-          <label class="newsletter-label" for="email">Email</label>
           <input
             class="newsletter-input"
             id="email"
             name="email"
             type="email"
-            placeholder="Enter your email"
+            placeholder="Enter Your email address"
           />
-          <button class="btn btn--primary newsletter-submit" type="submit">
-            Subscribe
-          </button>
+          <img src="./assets/img/Send.png" alt="" />
         </form>
+        <img class="polygon" src="./assets/img/Polygon.png" alt="" />
+        <img class="ellipse" src="./assets/img/Ellipse 2.png" alt="" />
       </section>
     </main>
 
-
-    <footer id="contact" class="site-footer" role="contentinfo">
-      <div class="site-footer-top">
-        <div class="footer-col">
-          <h3 class="footer-col-title">Company</h3>
-          <ul class="footer-col-list">
-            <li><a href="#">About</a></li>
-            <li><a href="#">Careers</a></li>
-            <li><a href="#">Press</a></li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h3 class="footer-col-title">Support</h3>
-          <ul class="footer-col-list">
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-top">
+        <div class="footer-colum">
+          <h3>Resources</h3>
+          <ul>
+            <li><a href="#">Download</a></li>
             <li><a href="#">Help Center</a></li>
-            <li><a href="#">Terms</a></li>
-            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Guide Book</a></li>
+            <li><a href="#">App Directory</a></li>
           </ul>
         </div>
-        <div class="footer-col">
-          <h3 class="footer-col-title">Contact</h3>
-          <ul class="footer-col-list">
-            <li>
-              <a href="mailto:hello@safetour.com">hello@safetour.com</a>
-            </li>
-            <li><a href="#">+00 123 456 789</a></li>
-            <li><a href="#">123 Anywhere St.</a></li>
+
+        <div class="footer-colum">
+          <h3>Travellers</h3>
+          <ul>
+            <li><a href="#">Why Travellers</a></li>
+            <li><a href="#">Enterprice</a></li>
+            <li><a href="#">Customer Stories</a></li>
+            <li><a href="#">Instagram post</a></li>
           </ul>
+        </div>
+
+        <div class="footer-colum">
+          <h3>Company</h3>
+          <ul>
+            <li><a href="#">Travelling</a></li>
+            <li><a href="#">About Locato</a></li>
+            <li><a href="#">Success</a></li>
+            <li><a href="#">Information</a></li>
+          </ul>
+        </div>
+        <div class="footer-colum">
+          <h3>Get in Touch</h3>
+          <p>Feel free to get in touch with us vai email</p>
+          <span>email@gmail.com</span>
         </div>
       </div>
-      <div class="site-footer-bottom">
-        <p class="site-footer-copy">© Safe Tour. All rights reserved.</p>
+      <div class="footer-bottom">
+        <div class="footer-logo">
+          <div class="logo-circle">
+            <img src="./assets/img/logo.png" alt="" />
+          </div>
+          <span>Safe Tour<span class="brand-dot">.</span></span>
+        </div>
+
+        <div class="footer-menu">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Destinations</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Pages</a></li>
+        </div>
+
+        <div class="footer-icon">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
       </div>
     </footer>
   </body>
 </html>
-
-</html>
-
