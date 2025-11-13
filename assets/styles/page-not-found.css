@@ -1,0 +1,48 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.pnf-gr {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    margin: 200px auto;
+    img {
+        width: 925.62px;
+    }
+    .noti {
+        right: 5%;
+        top: 40%;
+        position: absolute;
+        .oopps {
+            color: #676A6C;
+        }
+        h1 {
+            font-size: 62px;
+        }
+    }
+}
+
+@media (max-width: 1190px) {
+    .pnf-gr {
+    margin: 200px auto;
+    img {
+        max-width: 400px;
+    }
+    .noti {
+        right: 50%;
+        top: 100%;
+        margin-top: 100px;
+        .oopps {
+            color: #676A6C;
+        }
+        h1 {
+            font-size: 40px;
+        }
+    }
+}
+}
