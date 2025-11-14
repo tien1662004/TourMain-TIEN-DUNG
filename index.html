@@ -2,8 +2,8 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Safe Tour</title>
 
     <!-- CSS reset, common -->
     <link rel="stylesheet" href="./assets/styles/reset.css" />
@@ -18,24 +18,844 @@
     />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
 
     <!-- CSS components  -->
-    <link rel="stylesheet" href="./assets/styles/header.css" />
-    <link rel="stylesheet" href="./assets/styles/footer.css" />
+    <link rel="stylesheet" href="./assets/styles/components/header-index.css" />
+    <link rel="stylesheet" href="./assets/styles/components/footer.css" />
 
     <!-- CSS main -->
     <link rel="stylesheet" href="./assets/styles/home.css" />
   </head>
   <body>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-      crossorigin="anonymous"
-    ></script>
+    <!--  Header / Nav  -->
+    <header class="container" role="banner ">
+      <div class="site-header-bar" role="navigation" aria-label="Primary">
+        <a class="brand" href="#">
+          <img
+            class="brand-logo"
+            src="./assets/img/logo.png"
+            alt="Safe Tour logo"
+          />
+          <p class="brand-name">Safe Tour<span class="brand-dot">.</span></p>
+        </a>
+
+        <nav id="main-nav" class="nav">
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a class="nav-link" href="./index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./destions.html">Destinations</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./blog.html">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./tours.html">Pages</a>
+            </li>
+          </ul>
+        </nav>
+
+        <button class="btt-secondary" href="#contact">Contact us</button>
+      </div>
+
+      <!--  Hero  -->
+      <section class="hero container" id="about" aria-label="Hero">
+        <div class="hero-content">
+          <div class="hero-inf">
+            <h1 class="hero-title">Let's Make Your Best Trip Ever</h1>
+            <p class="hero-desc">
+              Plan and book your perfect trip with expert advice, travel tips,
+              destination information and inspiration from us.
+            </p>
+            <div class="hero-actions">
+              <a class="btt-primary" href="#search">Discover Now</a>
+              <div class="play-but">
+                <img
+                  style="width: 100px; height: 100px"
+                  src="./assets/img/Play.png"
+                  alt=""
+                />
+                <a>Learn More</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-visual">
+            <img
+              class="hero-image"
+              src="./assets/img/banner.png"
+              alt="Traveler illustration"
+            />
+          </div>
+
+          <div class="hero-stats">
+            <div class="stat">
+              <div class="stat-icon">
+                <img
+                  style="width: 22.91px; height: 26.76px"
+                  src="./assets/img/star-brain.png"
+                  alt=""
+                />
+              </div>
+              <div class="stat-data">
+                <strong class="stat-value">12</strong>
+                <span class="stat-label">Years Experiences</span>
+              </div>
+            </div>
+
+            <div class="stat">
+              <div class="stat-icon">
+                <img
+                  style="width: 22.69px; height: 25.81px"
+                  src="./assets/img/star-cup.png"
+                  alt=""
+                />
+              </div>
+              <div class="stat-data">
+                <strong class="stat-value">29 </strong>
+                <span class="stat-label">Awards Gained</span>
+              </div>
+            </div>
+
+            <div class="stat">
+              <div class="stat-icon">
+                <img
+                  style="width: 27.85px; height: 22.77px"
+                  src="./assets/img/buildingg.png"
+                  alt=""
+                />
+              </div>
+              <div class="stat-data">
+                <strong class="stat-value">725+</strong>
+                <span class="stat-label">Property Build</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Search Bar -->
+      <section id="search" class="search container" aria-label="Search tours">
+        <form class="search-form">
+          <div class="search-field">
+            <label class="search-label" for="location">Location</label>
+            <select class="search-select" id="location" name="location">
+              <option value="bali">Bali, Indonesia</option>
+              <option value="bangkok">Bangkok, Thailand</option>
+              <option value="tokyo">Tokyo, Japan</option>
+            </select>
+          </div>
+
+          <div class="search-field">
+            <label class="search-label" for="city">City</label>
+            <select class="search-select" id="city" name="city">
+              <option value="prambanan">Prambanan</option>
+              <option value="ubud">Ubud</option>
+            </select>
+          </div>
+
+          <div class="search-field">
+            <label class="search-label" for="guests">Guests</label>
+            <select class="search-select" id="guests" name="guests">
+              <option value="2">2 Persons</option>
+              <option value="4">4 Persons</option>
+              <option value="8">8 Persons</option>
+            </select>
+          </div>
+
+          <div class="search-but">
+            <i class="fa-solid fa-magnifying-glass" style="color: #ffffff"></i>
+            <button class="search-submit" type="submit">Search</button>
+          </div>
+        </form>
+      </section>
+    </header>
+
+    <!-- Main -->
+    <main id="main-content">
+      <!-- Our Best Tour -->
+      <section
+        class="section best-tours container"
+        aria-labelledby="best-tours-title"
+      >
+        <div class="section-head">
+          <div class="about-bestt">
+            <h2 id="best-tours-title" class="section-title">Our Best Tour</h2>
+            <p class="section-subtitle">
+              These are locations where it's easy to feel healthier, happier and
+              less stressed.
+            </p>
+          </div>
+          <button class="btt btt-primary" href="#">See all tours</button>
+        </div>
+
+        <div class="cards">
+          <!-- card -->
+          <div class="card">
+            <img
+              class="tour-card-image"
+              src="./assets/img/best-tour-1.jpg"
+              alt="Cairns travel"
+            />
+            <div class="tour-card-body">
+              <div class="tour-card-meta">
+                <p class="price">$150/day</p>
+              </div>
+              <h3 class="tour-card-title">Cairns travel</h3>
+              <img
+                style="height: 14px; width: 14px"
+                src="./assets/img/locate-icon.png"
+                alt=""
+              />
+              <span>Cairns QLD, Australia</span>
+              <div class="tour-card-footer">
+                <img
+                  style="height: 14px; width: 14px"
+                  src="./assets/img/calendar-icon.png"
+                  alt=""
+                />
+                <span class="tour-card-date">Oct 28, 2021</span>
+                <img
+                  style="height: 14px; width: 14px"
+                  src="./assets/img/clock-icon.png"
+                  alt=""
+                />
+                <span class="tour-card-link" href="#">5 Days</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <article class="tour-card">
+              <img
+                class="tour-card-image"
+                src="./assets/img/best-tour-2.jpg"
+                alt="Cairns travel"
+              />
+              <div class="tour-card-body">
+                <div class="tour-card-meta">
+                  <p class="price">$110/day</p>
+                </div>
+                <h3 class="tour-card-title">Orlando Travel</h3>
+                <img
+                  style="height: 14px; width: 14px"
+                  src="./assets/img/locate-icon.png"
+                  alt=""
+                />
+                <span>Orlando, FL, USA</span>
+                <div class="tour-card-footer">
+                  <img
+                    style="height: 14px; width: 14px"
+                    src="./assets/img/calendar-icon.png"
+                    alt=""
+                  />
+                  <span class="tour-card-date">Jul 30,2021</span>
+                  <img
+                    style="height: 14px; width: 14px"
+                    src="./assets/img/clock-icon.png"
+                    alt=""
+                  />
+                  <span class="tour-card-link" href="#">3 Days</span>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="card">
+            <article class="tour-card">
+              <img
+                class="tour-card-image"
+                src="./assets/img/best-tour-3.jpg"
+                alt="Cairns travel"
+              />
+              <div class="tour-card-body">
+                <div class="tour-card-meta">
+                  <p class="price">$136/day</p>
+                </div>
+                <h3 class="tour-card-title">Malaysia</h3>
+                <img
+                  style="height: 14px; width: 14px"
+                  src="./assets/img/locate-icon.png"
+                  alt=""
+                />
+                <span>Malaisia</span>
+                <div class="tour-card-footer">
+                  <img
+                    style="height: 14px; width: 14px"
+                    src="./assets/img/calendar-icon.png"
+                    alt=""
+                  />
+                  <span class="tour-card-date">Jul 29, 2021</span>
+                  <img
+                    style="height: 14px; width: 14px"
+                    src="./assets/img/clock-icon.png"
+                    alt=""
+                  />
+                  <span class="tour-card-link" href="#">5 Days</span>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Why Choose Us -->
+      <section class="why-choose container" aria-labelledby="why-title">
+        <figure class="why-visual">
+          <img
+            style="width: 436px; height: 518px; border-radius: 64px"
+            class="why-image"
+            src="./assets/img/choose.png"
+            alt="Happy travelers"
+          />
+          <figcaption class="visually-hidden">
+            Why travelers choose us
+          </figcaption>
+        </figure>
+
+        <div class="why-content">
+          <h2 id="why-title" class="section-title">Why Choose Us ?</h2>
+          <p class="section-subtitle">
+            We make all the process easy. Dummy text ever since the is,
+            <br />when an unknown printer took.
+          </p>
+          <div class="why-list">
+            <div class="why-item">
+              <img class="why-img" src="./assets/img/world.png" alt="" />
+              <div class="why-item-text">
+                <h3 class="why-item-title">We make all the process easy</h3>
+                <p class="why-item-desc">
+                  A galley of type and scrambled it to make a type when an
+                  unknown printer took.
+                </p>
+              </div>
+            </div>
+            <div class="why-item">
+              <img class="why-img" src="./assets/img/vali.png" alt="" />
+              <div class="why-item-text">
+                <h3 class="why-item-title">Private & Customized Tours</h3>
+                <p class="why-item-desc">
+                  Tailor-made experiences with flexible itineraries.
+                </p>
+              </div>
+            </div>
+            <div class="why-item">
+              <img class="why-img" src="./assets/img/world-book.png" alt="" />
+              <div class="why-item-text">
+                <h3 class="why-item-title">Immigration & Passport Help</h3>
+                <p class="why-item-desc">
+                  Support for visa, passport and entry requirements.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Trending -->
+      <section class="section trending" aria-labelledby="trending-title">
+        <div class="trending-head container">
+          <div>
+            <h2 id="trending-title" class="section-title">Trending 2025</h2>
+            <p class="section-subtitle">
+              Most brilliant reasons Entrada should be your one-stop-shop!
+            </p>
+          </div>
+          <div
+            class="carousel-controls"
+            role="group"
+            aria-label="Trending controls"
+          >
+            <button
+              class="carousel-controls-btn"
+              type="button"
+              data-action="prev"
+              aria-label="Previous"
+            >
+              <i class="fa-solid fa-arrow-left"></i>
+            </button>
+            <button
+              class="carousel-controls-btn"
+              type="button"
+              data-action="next"
+              aria-label="Next"
+            >
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="trending-track" data-role="carousel-track">
+          <article class="trend-card">
+            <img
+              class="trend-card-image"
+              src="./assets/img/trend1.png"
+              alt="Mountain Hiking Tour"
+            />
+            <div class="trend-card-body">
+              <h3 class="trend-card-title">Mountain Hiking Tour</h3>
+              <p class="trend-card-meta">12 Places | 3 Activities</p>
+              <div class="trend-price">
+                <p class="trending-price">$895.50</p>
+                <button>Buy Now</button>
+              </div>
+              <div class="trending-footer">
+                <div class="trending-footer-logo">
+                  <img src="./assets/img/logo.png" alt="" />
+                </div>
+                <span>Safe Tour Agency</span>
+              </div>
+            </div>
+          </article>
+          <article class="trend-card">
+            <img
+              class="trend-card-image"
+              src="./assets/img/trend2.png"
+              alt="Paradise Island"
+            />
+            <div class="trend-card-body">
+              <h3 class="trend-card-title">Tran Skyline</h3>
+              <p class="trend-card-meta">12 Places | 3 Activities</p>
+              <div class="trend-price">
+                <p class="trending-price">$769.99</p>
+                <button>Buy Now</button>
+              </div>
+              <div class="trending-footer">
+                <div class="trending-footer-logo">
+                  <img src="./assets/img/logo.png" alt="" />
+                </div>
+                <span>Safe Tour Agency</span>
+              </div>
+            </div>
+          </article>
+          <article class="trend-card">
+            <img
+              class="trend-card-image"
+              src="./assets/img/trend3.png"
+              alt="Surf & Sun"
+            />
+            <div class="trend-card-body">
+              <h3 class="trend-card-title">Forest Wild Life</h3>
+              <p class="trend-card-meta">12 Places | 3 Activities</p>
+              <div class="trend-price">
+                <p class="trending-price">$939.80</p>
+                <button>Buy Now</button>
+              </div>
+              <div class="trending-footer">
+                <div class="trending-footer-logo">
+                  <img src="./assets/img/logo.png" alt="" />
+                </div>
+                <span>Safe Tour Agency</span>
+              </div>
+            </div>
+          </article>
+          <article class="trend-card">
+            <img
+              class="trend-card-image"
+              src="./assets/img/trend4.png"
+              alt="Snow Adventures"
+            />
+            <div class="trend-card-body">
+              <h3 class="trend-card-title">Tran Skyline</h3>
+              <p class="trend-card-meta">12 Places | 3 Activities</p>
+              <div class="trend-price">
+                <p class="trending-price">$769.99</p>
+                <button>Buy Now</button>
+              </div>
+              <div class="trending-footer">
+                <div class="trending-footer-logo">
+                  <img src="./assets/img/logo.png" alt="" />
+                </div>
+                <span>Safe Tour Agency</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- Top Destination -->
+      <section
+        class="section destinations container"
+        aria-labelledby="destinations-title"
+      >
+        <div class="destination-head">
+          <div class="destination-title">
+            <h2>Top Destination</h2>
+            <p class="destionation-desc">
+              Sost Brilliant reasons Entrada should be your one-stop-shop!
+            </p>
+          </div>
+          <button class="btt btt-primary" href="#">Explore More</button>
+        </div>
+        <div class="cards-destination">
+          <div class="card destination-card i1">
+            <article>
+              <img
+                class="destination-card-image"
+                src="./assets/img/location1.png"
+                alt=""
+              />
+              <p class="des-rate">3.5</p>
+              <div class="des-desc">
+                <h2>Vientam</h2>
+                <p>Worefall</p>
+              </div>
+            </article>
+          </div>
+
+          <div class="destination-card i2">
+            <article>
+              <img
+                class="destination-card-image"
+                src="./assets/img/location2.png"
+                alt=""
+              />
+              <p class="des-rate">3.5</p>
+              <div class="des-desc">
+                <h2>Vientam</h2>
+                <p>Worefall</p>
+              </div>
+            </article>
+          </div>
+
+          <div class="destination-card i3">
+            <article>
+              <img
+                class="destination-card-image"
+                src="./assets/img/location3.png"
+                alt=""
+              />
+              <p class="des-rate">3.5</p>
+              <div class="des-desc">
+                <h2>Vientam</h2>
+                <p>Worefall</p>
+              </div>
+            </article>
+          </div>
+
+          <div class="destination-card i4">
+            <article>
+              <img
+                class="destination-card-image"
+                src="./assets/img/location4.png"
+                alt=""
+              />
+              <p class="des-rate">3.5</p>
+              <div class="des-desc">
+                <h2>Vientam</h2>
+                <p>Worefall</p>
+              </div>
+            </article>
+          </div>
+
+          <div class="destination-card i5">
+            <article>
+              <img
+                class="destination-card-image"
+                src="./assets/img/location5.png"
+                alt=""
+              />
+              <p class="des-rate">3.5</p>
+              <div class="des-desc">
+                <h2>Vientam</h2>
+                <p>Worefall</p>
+              </div>
+            </article>
+          </div>
+
+          <div class="destination-card i6">
+            <article>
+              <img
+                class="destination-card-image"
+                src="./assets/img/location6.png"
+                alt=""
+              />
+              <p class="des-rate">3.5</p>
+              <div class="des-desc">
+                <h2>Vientam</h2>
+                <p>Worefall</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Tour Trips -->
+      <section
+        class="section tour-trips container"
+        aria-labelledby="tour-trip-title"
+      >
+        <h2 class="tour-trip-titlee">Tour Trips</h2>
+        <div class="tour-trip-grid">
+          <div class="tour-trip">
+            <img
+              style="width: 54.58px; height: 68px"
+              src="./assets/img/type1.png"
+              alt=""
+            />
+            <span class="tour-trip-icon" aria-hidden="true"></span>
+            <h3 class="tour-trip-title">City Tours</h3>
+            <p class="tour-trip-desc">
+              5 Tours- From <span class="tour-dot">550$</span>
+            </p>
+          </div>
+          <div class="tour-trip">
+            <img
+              style="width: 81.5px; height: 68px"
+              src="./assets/img/type2.png"
+              alt=""
+            />
+            <span class="tour-trip-icon" aria-hidden="true"></span>
+            <h3 class="tour-trip-title">Beaches</h3>
+            <p class="tour-trip-desc">
+              10 Tours- From <span class="tour-dot">250$</span>
+            </p>
+          </div>
+          <div class="tour-trip">
+            <img
+              style="width: 79.34px; height: 68px"
+              src="./assets/img/type3.png"
+              alt=""
+            />
+            <span class="tour-trip-icon" aria-hidden="true"></span>
+            <h3 class="tour-trip-title">Museum Tours</h3>
+            <p class="tour-trip-desc">
+              5 Tours- From <span class="tour-dot">399$</span>
+            </p>
+          </div>
+          <div class="tour-trip">
+            <img
+              style="width: 68px; height: 68px"
+              src="./assets/img/type4.png"
+              alt=""
+            />
+            <span class="tour-trip-icon" aria-hidden="true"></span>
+            <h3 class="tour-trip-title">Cruises</h3>
+            <p class="tour-trip-desc">
+              8 Tours- From <span class="tour-dot">850$</span>
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- user-say  -->
+      <section
+        class="section user-say container"
+        aria-label="What our user say"
+      >
+        <div class="user-say-media">
+          <img class="user-say-image" src="./assets/img/user-say.png" alt="" />
+        </div>
+        <div class="user-say-content">
+          <h2 class="section-title">What our user say</h2>
+          <p>
+            “Adding live social proof was the #1 driver of increased revenue in
+            all my experiments while at Airkey.” and the bran must survive
+            atleast 1 year.
+          </p>
+          <div class="user-say-author">
+            <div class="user-say-img">
+              <img src="./assets/img/avt.png" alt="" />
+            </div>
+            <div class="user-say-desc">
+              <h5>Raul van Sutoyo</h5>
+              <span>UI Designer</span>
+              <div class="rating">
+                <img
+                  style="width: 10px; height: 10px"
+                  src="./assets/img/Rating.png"
+                  alt=""
+                />
+                <img
+                  style="width: 10px; height: 10px"
+                  src="./assets/img/Rating.png"
+                  alt=""
+                />
+                <img
+                  style="width: 10px; height: 10px"
+                  src="./assets/img/Rating.png"
+                  alt=""
+                />
+                <img
+                  style="width: 10px; height: 10px"
+                  src="./assets/img/Rating.png"
+                  alt=""
+                />
+                <img
+                  style="width: 10px; height: 10px"
+                  src="./assets/img/Rating.png"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Articles & Travel Guides -->
+      <section class="section guides container">
+        <div class="guides-title">
+          <h2>Articles & Travel Guidings</h2>
+          <p>
+            Travel has helped us to understand the meaning of life and it has
+            helped us become <br />better people. Each time we travel, we see
+            the world with new eyes.
+          </p>
+          <div class="vector"></div>
+        </div>
+        <div class="guides-grid">
+          <div class="guides-grid-left">
+            <article class="guide">
+              <img class="guide-image" src="./assets/img/travel1.jpg" alt="" />
+              <div class="guide-time">
+                <div class="guide-desc">
+                  <h3 class="guide-title">
+                    The real voyage does not consist in seeking new
+                  </h3>
+                  <p class="guide-excerpt">
+                    Excited him now natural saw passage offices you minuter. At
+                    by asked being court hopes.
+                  </p>
+                </div>
+                <span>Jun 1, 2021</span>
+              </div>
+            </article>
+          </div>
+          <div class="guides-grid-right">
+            <article class="guide">
+              <img class="guide-image" src="./assets/img/travel2.jpg" alt="" />
+              <div class="guide-desc">
+                <h3 class="guide-title">
+                  Mountains is always right destination.
+                </h3>
+                <p class="guide-excerpt">
+                  Farther so friends am to detract forbade
+                </p>
+                <span>Jun 1, 2021</span>
+              </div>
+            </article>
+            <article class="guide">
+              <img class="guide-image" src="./assets/img/travel3.png" alt="" />
+              <div class="guide-desc">
+                <h3 class="guide-title">
+                  Here Our's Life is either a daring adventure.
+                </h3>
+                <p class="guide-excerpt">
+                  One of the programs is Save Our I have personally.
+                </p>
+                <span>Jun 1, 2021</span>
+              </div>
+            </article>
+            <article class="guide">
+              <img class="guide-image" src="./assets/img/travel4.png" alt="" />
+              <div class="guide-desc">
+                <h3 class="guide-title">
+                  Here Our's Life is either a daring adventure.
+                </h3>
+                <p class="guide-excerpt">
+                  life is either a daring adventure or it's nothing
+                </p>
+                <span>Jun 1, 2021</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Newsletter -->
+      <section
+        class="section newsletter container"
+        aria-labelledby="newsletter-title"
+      >
+        <h2 id="newsletter-title" class="section-title">
+          Subscribe to our newsletter
+        </h2>
+        <p>
+          Reciev latest news, update, and many other things <br />every week.
+        </p>
+        <form class="newsletter-form">
+          <input
+            class="newsletter-input"
+            id="email"
+            name="email"
+            type="email"
+            placeholder="Enter Your email address"
+          />
+          <img src="./assets/img/Send.png" alt="" />
+        </form>
+        <img class="polygon" src="./assets/img/Polygon.png" alt="" />
+        <img class="ellipse" src="./assets/img/Ellipse 2.png" alt="" />
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-top">
+        <div class="footer-colum">
+          <h3>Resources</h3>
+          <ul>
+            <li><a href="#">Download</a></li>
+            <li><a href="#">Help Center</a></li>
+            <li><a href="#">Guide Book</a></li>
+            <li><a href="#">App Directory</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-colum">
+          <h3>Travellers</h3>
+          <ul>
+            <li><a href="#">Why Travellers</a></li>
+            <li><a href="#">Enterprice</a></li>
+            <li><a href="#">Customer Stories</a></li>
+            <li><a href="#">Instagram post</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-colum">
+          <h3>Company</h3>
+          <ul>
+            <li><a href="#">Travelling</a></li>
+            <li><a href="#">About Locato</a></li>
+            <li><a href="#">Success</a></li>
+            <li><a href="#">Information</a></li>
+          </ul>
+        </div>
+        <div class="footer-colum">
+          <h3>Get in Touch</h3>
+          <p>Feel free to get in touch with us vai email</p>
+          <span>email@gmail.com</span>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="footer-logo">
+          <div class="logo-circle">
+            <img src="./assets/img/logo.png" alt="" />
+          </div>
+          <span>Safe Tour<span class="brand-dot">.</span></span>
+        </div>
+
+        <div class="footer-menu">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Destinations</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Pages</a></li>
+        </div>
+
+        <div class="footer-icon">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
