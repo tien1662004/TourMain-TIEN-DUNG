@@ -41,9 +41,9 @@
   }.nav-links a::after{
   content: "";
   position: absolute;
-  left: 50%;
+  right: 50%;
   bottom: -6px;
-  transform: translateX(-50%);
+  transform: translateX(-40%);
   width: 0;
   height: 3px;
   background-color: #FF7B29; 
@@ -52,7 +52,7 @@
   }
   .nav-links a:hover::after,
   .nav-links a.active::after {
-  width: 40%; 
+  width: 30%; 
 }
   .logo {
     display: flex;
@@ -140,14 +140,21 @@
     box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
 }
 .btn{
-    margin-top: 80px;
-    background: #FF7B29;
-    font-size: 18px;
-    color: white;
-    cursor: pointer;
-    border: none;
-    padding: 12px 32px;
-    border-radius: 12px;
+  margin-top: 80px;
+  background: linear-gradient(135deg, #FF7B29, #FF9F5A);
+  font-size: 18px;
+  color: white;
+  cursor: pointer;
+  border: none;
+  padding: 12px 32px;
+  border-radius: 12px;
+  transition: 0.3s ease;
+  box-shadow: 0 4px 12px rgba(255, 123, 41, 0.4);
+}
+
+.btn:hover{
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 8px 18px rgba(255, 123, 41, 0.55);
 }
 /* footer */
 .footer{
@@ -228,3 +235,36 @@
     align-items: center;
     justify-content: center;
   }
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+  .card {
+    overflow: hidden;
+    border-radius: 12px;
+  }
+  
+  .card img {
+    transition: transform 0.4s ease;
+  }
+  
+  .card:hover img {
+    transform: scale(1.08);
+  }
+  @media (max-width: 576px) {
+    .card img {
+      height: 240px; /* hình đầy đặn hơn */
+      object-fit: cover;
+    }
+  
+    .hero h1 {
+      font-size: 42px;
+    }
+  
+    .hero img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  

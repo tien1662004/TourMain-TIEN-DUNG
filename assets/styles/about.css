@@ -1,4 +1,5 @@
 /* Tiến */
+
 .header {
   position: relative;
   height: 100vh;
@@ -268,7 +269,14 @@
   border-right: 45px solid transparent;
   border-bottom: 70px solid #bfa82d;
   transform: rotate(-90deg);
+  animation: moveUpDown 1.5s ease-in-out infinite;
 }
+@keyframes moveUpDown {
+  0% { transform: rotate(-360deg) translateY(0); }
+  50% { transform: rotate(-360deg) translateY(-20px); }
+  100% { transform: rotate(-360deg) translateY(0); }
+}
+
 
 .letter-text {
   padding: 70px 0;
@@ -307,6 +315,14 @@
     cursor: pointer;
     transition: 0.3s;
   }
+}
+img {
+  transition: 0.4s ease;
+}
+
+img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 15px 25px rgba(0,0,0,0.2);
 }
 /* footer */
 .footer {
@@ -388,3 +404,37 @@
   align-items: center;
   justify-content: center;
 }
+@media (max-width: 1024px) {
+  .menu {
+    padding: 20px 60px;
+  }
+  .nav-links {
+    gap: 20px;
+  }
+  .hero h1 {
+    font-size: 90px;
+  }
+  .about-text,
+  .about-text1 {
+    padding: 100px 60px;
+    gap: 40px;
+  }
+  .about-text .text h2,
+  .about-text1 .text h2 {
+    font-size: 48px;
+  }
+  .tour-container {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 60px;
+  }
+  .letter {
+    width: 90%;
+  }
+  .footer {
+    padding: 0 60px;
+  }
+  .footer-top {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
