@@ -43,9 +43,6 @@
 }
 .menu {
   padding: 32px 135px;
-  backdrop-filter: blur(10px);
-  opacity: 1;
-  position: fixed;
   width: 100%;
   top: 0;
   z-index: 10;
@@ -68,6 +65,8 @@
   gap: 32px;
 }
 .nav-links a {
+  margin: 0 16px;
+  padding: 5px 0;
   text-decoration: none;
   color: #333;
   font-weight: 500;
@@ -76,18 +75,17 @@
 .nav-links a::after {
   content: "";
   position: absolute;
-  left: 50%;
-  bottom: -6px;
-  transform: translateX(-50%);
+  left: 0;
+  bottom: 0px;
   width: 0;
-  height: 3px;
+  height: 2px;
   background-color: #ff7b29;
   border-radius: 10px;
   transition: width 0.3s ease;
 }
 .nav-links a:hover::after,
 .nav-links a.active::after {
-  width: 40%;
+  width: 15px;
 }
 .logo {
   display: flex;
@@ -124,7 +122,6 @@
 .menu {
   position: relative;
   padding: 32px 135px;
-  backdrop-filter: blur(5px);
   position: fixed;
   width: 100%;
   top: 0;
@@ -148,6 +145,8 @@
   gap: 32px;
 }
 .nav-links a {
+  margin: 0 16px;
+  padding: 5px 0;
   text-decoration: none;
   color: #333;
   font-weight: 500;
@@ -156,18 +155,17 @@
 .nav-links a::after {
   content: "";
   position: absolute;
-  left: 50%;
-  bottom: -6px;
-  transform: translateX(-50%);
+  left: 0;
+  bottom: 0px;
   width: 0;
-  height: 3px;
+  height: 2px;
   background-color: #ff7b29;
   border-radius: 10px;
   transition: width 0.3s ease;
 }
 .nav-links a:hover::after,
 .nav-links a.active::after {
-  width: 40%;
+  width: 15px;
 }
 .logo {
   display: flex;
@@ -205,7 +203,6 @@
   align-items: center;
   position: relative;
   padding: 140px 0;
-
   display: flex;
   flex-direction: column;
 }
@@ -223,7 +220,6 @@
 .menu {
   position: relative;
   padding: 32px 135px;
-  backdrop-filter: blur(5px);
   position: fixed;
   width: 100%;
   top: 0;
@@ -247,6 +243,8 @@
   gap: 32px;
 }
 .nav-links a {
+  margin: 0 16px;
+  padding: 5px 0;
   text-decoration: none;
   color: #333;
   font-weight: 500;
@@ -255,18 +253,17 @@
 .nav-links a::after {
   content: "";
   position: absolute;
-  left: 50%;
-  bottom: -6px;
-  transform: translateX(-50%);
+  left: 0;
+  bottom: 0px;
   width: 0;
-  height: 3px;
+  height: 2px;
   background-color: #ff7b29;
   border-radius: 10px;
   transition: width 0.3s ease;
 }
 .nav-links a:hover::after,
 .nav-links a.active::after {
-  width: 40%;
+  width: 15px;
 }
 .logo {
   display: flex;
