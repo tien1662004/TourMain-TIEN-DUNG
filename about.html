@@ -18,8 +18,8 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <!-- CSS components  -->
-  <link rel="stylesheet" href="./assets/styles/header.css" />
-  <link rel="stylesheet" href="./assets/styles/footer.css" />
+  <link rel="stylesheet" href="./assets/styles/components/header-index.css" />
+  <link rel="stylesheet" href="./assets/styles/components/footer.css" />
 
   <!-- CSS main -->
   <link rel="stylesheet" href="./assets/styles/about.css" />
@@ -120,7 +120,7 @@
         <div class="tour-card">
           <img src="./assets/img/3.png" alt="" />
           <div class="tour-text">
-            <h3>Hasan Ahmed</h3>
+            <a href="">Hasan Ahmed</a>
             <p>Adventure master</p>
           </div>
           <div class="tour-icon">
@@ -134,7 +134,7 @@
           <img src="./assets/img/4.png" alt="" />
 
           <div class="tour-text">
-            <h3>Hasan Ahmed</h3>
+            <a href="">Hasan Ahmed</a>
             <p>Adventure master</p>
           </div>
           <div class="tour-icon">
@@ -148,7 +148,7 @@
           <img src="./assets/img/5.png" alt="" />
 
           <div class="tour-text">
-            <h3>Hasan Ahmed</h3>
+            <a href="">Hasan Ahmed</a>
             <p>Adventure master</p>
           </div>
           <div class="tour-icon">
@@ -159,19 +159,19 @@
         </div>
       </div>
     </section>
-    <section class="letter">
-      <div class="tamgiac"></div>
-      <div class="letter-text">
-        <h2>Subscribe our newsletter</h2>
-        <p>
-          Reciev latest news, update, and many other things <br />
-          every week.
-        </p>
-      </div>
-      <div class="input-box">
-        <input type="text" placeholder="Enter Your email address" />
-        <button><i class="fa fa-paper-plane"></i></button>
-      </div>
+    <section class="section newsletter container" aria-labelledby="newsletter-title">
+      <h2 id="newsletter-title" class="section-title">
+        Subscribe to our newsletter
+      </h2>
+      <p>
+        Reciev latest news, update, and many other things <br />every week.
+      </p>
+      <form class="newsletter-form">
+        <input class="newsletter-input" id="email" name="email" type="email" placeholder="Enter Your email address" />
+        <img class="send" src="./assets/img/Vector.png" alt="" />
+      </form>
+      <img class="polygon" src="./assets/img/Polygon.png" alt="" />
+      <img class="ellipse" src="./assets/img/Ellipse 2.png" alt="" />
     </section>
   </main>
   <footer class="footer">
