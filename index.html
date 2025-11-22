@@ -46,24 +46,26 @@
         <nav id="main-nav" class="nav">
           <ul class="nav-list">
             <li class="nav-item">
-              <a class="nav-link" href="./index.html">Home</a>
+              <a class="nav-linkk" href="./index.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./about.html">About</a>
+              <a class="nav-linkk" href="./about.html">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./destions.html">Destinations</a>
+              <a class="nav-linkk" href="./destions.html">Destinations</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./blog.html">Blog</a>
+              <a class="nav-linkk" href="./blog.html">Blog</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./tours.html">Pages</a>
+              <a class="nav-linkk" href="./tours.html">Pages</a>
             </li>
           </ul>
         </nav>
 
-        <button class="btt-secondary" href="#contact">Contact us</button>
+        <button class="btt-secondary">
+          <a href="./contact.html">Contact us</a>
+        </button>
       </div>
 
       <!--  Hero  -->
@@ -91,9 +93,24 @@
           <div class="hero-visual">
             <img
               class="hero-image"
-              src="./assets/img/banner.png"
+              src="./assets/img/banner1.png"
               alt="Traveler illustration"
             />
+            <img class="shape1" src="./assets/img/Shape1.png" alt="" />
+            <div class="stat-card">
+              <div class="progress">
+                <div class="progress-inner">
+                  <div class="value">39</div>
+                  <div class="label">Times traveled</div>
+                </div>
+              </div>
+
+              <div class="total">
+                <div class="number">224</div>
+                <div class="caption">Total trip (month)</div>
+              </div>
+            </div>
+            <div class="hero-line"></div>
           </div>
 
           <div class="hero-stats">
@@ -143,39 +160,37 @@
       </section>
 
       <!-- Search Bar -->
-      <section id="search" class="search container" aria-label="Search tours">
-        <form class="search-form">
-          <div class="search-field">
-            <label class="search-label" for="location">Location</label>
-            <select class="search-select" id="location" name="location">
-              <option value="bali">Bali, Indonesia</option>
-              <option value="bangkok">Bangkok, Thailand</option>
-              <option value="tokyo">Tokyo, Japan</option>
+      <section class="box">
+        <div class="box-container container">
+          <div class="box-item">
+            <label>Location</label>
+            <select>
+              <option>Bali, Indonesia</option>
+              <option>Hanoi, Vietnam</option>
+              <option>Tokyo, Japan</option>
             </select>
           </div>
-
-          <div class="search-field">
-            <label class="search-label" for="city">City</label>
-            <select class="search-select" id="city" name="city">
-              <option value="prambanan">Prambanan</option>
-              <option value="ubud">Ubud</option>
+          <div class="box-item">
+            <label>City</label>
+            <select>
+              <option>Prambanan</option>
+              <option>Ubud</option>
+              <option>Jakarta</option>
             </select>
           </div>
-
-          <div class="search-field">
-            <label class="search-label" for="guests">Guests</label>
-            <select class="search-select" id="guests" name="guests">
-              <option value="2">2 Persons</option>
-              <option value="4">4 Persons</option>
-              <option value="8">8 Persons</option>
+          <div class="box-item">
+            <label>Guest</label>
+            <select>
+              <option>8 Persons</option>
+              <option>2 Persons</option>
+              <option>4 Persons</option>
+              <option>10 Persons</option>
             </select>
           </div>
-
-          <div class="search-but">
-            <i class="fa-solid fa-magnifying-glass" style="color: #ffffff"></i>
-            <button class="search-submit" type="submit">Search</button>
-          </div>
-        </form>
+          <button class="btn-search">
+            <i class="fa fa-search"></i> Search
+          </button>
+        </div>
       </section>
     </header>
 
@@ -200,16 +215,16 @@
         <div class="cards">
           <!-- card -->
           <div class="card">
-            <img
-              class="tour-card-image"
-              src="./assets/img/best-tour-1.jpg"
-              alt="Cairns travel"
-            />
+            <div class="tour-card-image">
+              <a href="#">
+                <img src="./assets/img/best-tour-1.jpg" alt="Cairns travel" />
+              </a>
+            </div>
             <div class="tour-card-body">
               <div class="tour-card-meta">
                 <p class="price">$150/day</p>
               </div>
-              <h3 class="tour-card-title">Cairns travel</h3>
+              <h3 class="tour-card-title"><a href="#">Cairns travel</a></h3>
               <img
                 style="height: 14px; width: 14px"
                 src="./assets/img/locate-icon.png"
@@ -235,16 +250,16 @@
 
           <div class="card">
             <article class="tour-card">
-              <img
-                class="tour-card-image"
-                src="./assets/img/best-tour-2.jpg"
-                alt="Cairns travel"
-              />
+              <div class="tour-card-image">
+                <a href="#">
+                  <img src="./assets/img/best-tour-2.jpg" alt="Cairns travel" />
+                </a>
+              </div>
               <div class="tour-card-body">
                 <div class="tour-card-meta">
                   <p class="price">$110/day</p>
                 </div>
-                <h3 class="tour-card-title">Orlando Travel</h3>
+                <h3 class="tour-card-title"><a href="#">Orlando Travel</a></h3>
                 <img
                   style="height: 14px; width: 14px"
                   src="./assets/img/locate-icon.png"
@@ -271,16 +286,16 @@
 
           <div class="card">
             <article class="tour-card">
-              <img
-                class="tour-card-image"
-                src="./assets/img/best-tour-3.jpg"
-                alt="Cairns travel"
-              />
+              <div class="tour-card-image">
+                <a href="#">
+                  <img src="./assets/img/best-tour-3.jpg" alt="Cairns travel" />
+                </a>
+              </div>
               <div class="tour-card-body">
                 <div class="tour-card-meta">
                   <p class="price">$136/day</p>
                 </div>
-                <h3 class="tour-card-title">Malaysia</h3>
+                <h3 class="tour-card-title"><a href="#">Malaysia</a></h3>
                 <img
                   style="height: 14px; width: 14px"
                   src="./assets/img/locate-icon.png"
@@ -361,8 +376,8 @@
       </section>
 
       <!-- Trending -->
-      <section class="section trending" aria-labelledby="trending-title">
-        <div class="trending-head container">
+      <section class="trending container" aria-labelledby="trending-title">
+        <div class="trending-head">
           <div>
             <h2 id="trending-title" class="section-title">Trending 2025</h2>
             <p class="section-subtitle">
@@ -395,13 +410,15 @@
 
         <div class="trending-track" data-role="carousel-track">
           <article class="trend-card">
-            <img
-              class="trend-card-image"
-              src="./assets/img/trend1.png"
-              alt="Mountain Hiking Tour"
-            />
+            <div class="trend-card-image">
+              <a href="#">
+                <img src="./assets/img/trend1.png" alt="Mountain Hiking Tour" />
+              </a>
+            </div>
             <div class="trend-card-body">
-              <h3 class="trend-card-title">Mountain Hiking Tour</h3>
+              <h3 class="trend-card-title">
+                <a href="#">Mountain Hiking Tour</a>
+              </h3>
               <p class="trend-card-meta">12 Places | 3 Activities</p>
               <div class="trend-price">
                 <p class="trending-price">$895.50</p>
@@ -416,13 +433,13 @@
             </div>
           </article>
           <article class="trend-card">
-            <img
-              class="trend-card-image"
-              src="./assets/img/trend2.png"
-              alt="Paradise Island"
-            />
+            <div class="trend-card-image">
+              <a href="#">
+                <img src="./assets/img/trend2.png" alt="Mountain Hiking Tour" />
+              </a>
+            </div>
             <div class="trend-card-body">
-              <h3 class="trend-card-title">Tran Skyline</h3>
+              <h3 class="trend-card-title"><a href="#">Tran Skyline</a></h3>
               <p class="trend-card-meta">12 Places | 3 Activities</p>
               <div class="trend-price">
                 <p class="trending-price">$769.99</p>
@@ -437,13 +454,13 @@
             </div>
           </article>
           <article class="trend-card">
-            <img
-              class="trend-card-image"
-              src="./assets/img/trend3.png"
-              alt="Surf & Sun"
-            />
+            <div class="trend-card-image">
+              <a href="#">
+                <img src="./assets/img/trend3.png" alt="Mountain Hiking Tour" />
+              </a>
+            </div>
             <div class="trend-card-body">
-              <h3 class="trend-card-title">Forest Wild Life</h3>
+              <h3 class="trend-card-title"><a href="#">Forest Wild Life</a></h3>
               <p class="trend-card-meta">12 Places | 3 Activities</p>
               <div class="trend-price">
                 <p class="trending-price">$939.80</p>
@@ -458,13 +475,13 @@
             </div>
           </article>
           <article class="trend-card">
-            <img
-              class="trend-card-image"
-              src="./assets/img/trend4.png"
-              alt="Snow Adventures"
-            />
+            <div class="trend-card-image">
+              <a href="#">
+                <img src="./assets/img/trend4.png" alt="Mountain Hiking Tour" />
+              </a>
+            </div>
             <div class="trend-card-body">
-              <h3 class="trend-card-title">Tran Skyline</h3>
+              <h3 class="trend-card-title"><a href="#">Tran Skyline</a></h3>
               <p class="trend-card-meta">12 Places | 3 Activities</p>
               <div class="trend-price">
                 <p class="trending-price">$769.99</p>
@@ -493,16 +510,18 @@
               Sost Brilliant reasons Entrada should be your one-stop-shop!
             </p>
           </div>
-          <button class="btt btt-primary" href="#">Explore More</button>
+          <button class="btt btt-primary" href="#">See all destionation</button>
         </div>
         <div class="cards-destination">
           <div class="card destination-card i1">
             <article>
-              <img
-                class="destination-card-image"
-                src="./assets/img/location1.png"
-                alt=""
-              />
+              <a href="#">
+                <img
+                  class="destination-card-image"
+                  src="./assets/img/location1.png"
+                  alt=""
+                />
+              </a>
               <p class="des-rate">3.5</p>
               <div class="des-desc">
                 <h2>Vientam</h2>
@@ -513,11 +532,13 @@
 
           <div class="destination-card i2">
             <article>
-              <img
-                class="destination-card-image"
-                src="./assets/img/location2.png"
-                alt=""
-              />
+              <a href="#">
+                <img
+                  class="destination-card-image"
+                  src="./assets/img/location2.png"
+                  alt=""
+                />
+              </a>
               <p class="des-rate">3.5</p>
               <div class="des-desc">
                 <h2>Vientam</h2>
@@ -528,11 +549,13 @@
 
           <div class="destination-card i3">
             <article>
-              <img
-                class="destination-card-image"
-                src="./assets/img/location3.png"
-                alt=""
-              />
+              <a href="#">
+                <img
+                  class="destination-card-image"
+                  src="./assets/img/location3.png"
+                  alt=""
+                />
+              </a>
               <p class="des-rate">3.5</p>
               <div class="des-desc">
                 <h2>Vientam</h2>
@@ -543,11 +566,13 @@
 
           <div class="destination-card i4">
             <article>
-              <img
-                class="destination-card-image"
-                src="./assets/img/location4.png"
-                alt=""
-              />
+              <a href="#">
+                <img
+                  class="destination-card-image"
+                  src="./assets/img/location4.png"
+                  alt=""
+                />
+              </a>
               <p class="des-rate">3.5</p>
               <div class="des-desc">
                 <h2>Vientam</h2>
@@ -558,11 +583,13 @@
 
           <div class="destination-card i5">
             <article>
-              <img
-                class="destination-card-image"
-                src="./assets/img/location5.png"
-                alt=""
-              />
+              <a href="#">
+                <img
+                  class="destination-card-image"
+                  src="./assets/img/location5.png"
+                  alt=""
+                />
+              </a>
               <p class="des-rate">3.5</p>
               <div class="des-desc">
                 <h2>Vientam</h2>
@@ -573,11 +600,13 @@
 
           <div class="destination-card i6">
             <article>
-              <img
-                class="destination-card-image"
-                src="./assets/img/location6.png"
-                alt=""
-              />
+              <a href="#">
+                <img
+                  class="destination-card-image"
+                  src="./assets/img/location6.png"
+                  alt=""
+                />
+              </a>
               <p class="des-rate">3.5</p>
               <div class="des-desc">
                 <h2>Vientam</h2>
@@ -588,12 +617,12 @@
         </div>
       </section>
 
-      <!-- Tour Trips -->
+      <!-- Tour Type -->
       <section
         class="section tour-trips container"
         aria-labelledby="tour-trip-title"
       >
-        <h2 class="tour-trip-titlee">Tour Trips</h2>
+        <h2 class="tour-trip-titlee">Tour Type</h2>
         <div class="tour-trip-grid">
           <div class="tour-trip">
             <img
@@ -602,7 +631,7 @@
               alt=""
             />
             <span class="tour-trip-icon" aria-hidden="true"></span>
-            <h3 class="tour-trip-title">City Tours</h3>
+            <h3 class="tour-trip-title"><a href="#">City Tour</a></h3>
             <p class="tour-trip-desc">
               5 Tours- From <span class="tour-dot">550$</span>
             </p>
@@ -614,7 +643,7 @@
               alt=""
             />
             <span class="tour-trip-icon" aria-hidden="true"></span>
-            <h3 class="tour-trip-title">Beaches</h3>
+            <h3 class="tour-trip-title"><a href="#">Beaches</a></h3>
             <p class="tour-trip-desc">
               10 Tours- From <span class="tour-dot">250$</span>
             </p>
@@ -626,7 +655,7 @@
               alt=""
             />
             <span class="tour-trip-icon" aria-hidden="true"></span>
-            <h3 class="tour-trip-title">Museum Tours</h3>
+            <h3 class="tour-trip-title"><a href="#">Museum Tours</a></h3>
             <p class="tour-trip-desc">
               5 Tours- From <span class="tour-dot">399$</span>
             </p>
@@ -638,7 +667,7 @@
               alt=""
             />
             <span class="tour-trip-icon" aria-hidden="true"></span>
-            <h3 class="tour-trip-title">Cruises</h3>
+            <h3 class="tour-trip-title"><a href="#">Cruises</a></h3>
             <p class="tour-trip-desc">
               8 Tours- From <span class="tour-dot">850$</span>
             </p>
@@ -714,11 +743,17 @@
         <div class="guides-grid">
           <div class="guides-grid-left">
             <article class="guide">
-              <img class="guide-image" src="./assets/img/travel1.jpg" alt="" />
+              <div class="guide-image">
+                <a href="#">
+                  <img src="./assets/img/travel1.jpg" alt="" />
+                </a>
+              </div>
               <div class="guide-time">
                 <div class="guide-desc">
                   <h3 class="guide-title">
-                    The real voyage does not consist in seeking new
+                    <a href="#"
+                      >The real voyage does not consist in seeking new</a
+                    >
                   </h3>
                   <p class="guide-excerpt">
                     Excited him now natural saw passage offices you minuter. At
@@ -731,10 +766,14 @@
           </div>
           <div class="guides-grid-right">
             <article class="guide">
-              <img class="guide-image" src="./assets/img/travel2.jpg" alt="" />
+              <div class="guide-image">
+                <a href="#">
+                  <img src="./assets/img/travel2.jpg" alt="" />
+                </a>
+              </div>
               <div class="guide-desc">
                 <h3 class="guide-title">
-                  Mountains is always right destination.
+                  <a href="#">Mountains is always right destination.</a>
                 </h3>
                 <p class="guide-excerpt">
                   Farther so friends am to detract forbade
@@ -743,10 +782,14 @@
               </div>
             </article>
             <article class="guide">
-              <img class="guide-image" src="./assets/img/travel3.png" alt="" />
+              <div class="guide-image">
+                <a href="#">
+                  <img src="./assets/img/travel3.png" alt="" />
+                </a>
+              </div>
               <div class="guide-desc">
                 <h3 class="guide-title">
-                  Here Our's Life is either a daring adventure.
+                  <a href="#">Here Our's Life is either a daring adventure.</a>
                 </h3>
                 <p class="guide-excerpt">
                   One of the programs is Save Our I have personally.
@@ -755,10 +798,14 @@
               </div>
             </article>
             <article class="guide">
-              <img class="guide-image" src="./assets/img/travel4.png" alt="" />
+              <div class="guide-image">
+                <a href="#">
+                  <img src="./assets/img/travel4.png" alt="" />
+                </a>
+              </div>
               <div class="guide-desc">
                 <h3 class="guide-title">
-                  Here Our's Life is either a daring adventure.
+                  <a href="#">Here Our's Life is either a daring adventure.</a>
                 </h3>
                 <p class="guide-excerpt">
                   life is either a daring adventure or it's nothing
@@ -789,7 +836,7 @@
             type="email"
             placeholder="Enter Your email address"
           />
-          <img src="./assets/img/Send.png" alt="" />
+          <img class="send" src="./assets/img/Vector.png" alt="" />
         </form>
         <img class="polygon" src="./assets/img/Polygon.png" alt="" />
         <img class="ellipse" src="./assets/img/Ellipse 2.png" alt="" />
@@ -843,11 +890,21 @@
         </div>
 
         <div class="footer-menu">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Destinations</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">Pages</a></li>
+          <li>
+            <a href="./index.html">Home</a>
+          </li>
+          <li>
+            <a href="./about.html">About</a>
+          </li>
+          <li>
+            <a href="./destions.html">Destinations</a>
+          </li>
+          <li>
+            <a href="./blog.html">Blog</a>
+          </li>
+          <li>
+            <a href="./tours.html">Pages</a>
+          </li>
         </div>
 
         <div class="footer-icon">

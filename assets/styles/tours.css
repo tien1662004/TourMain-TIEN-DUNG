@@ -152,13 +152,13 @@
   flex-direction: column;
 }
 .hero img {
-  width: 330px;
-  height: 334px;
+  width: auto;
+  height: 500px;
 }
 .hero h1 {
   position: absolute;
   text-align: center;
-  font-size: 60px;
+  font-size: 100px;
   font-weight: 700;
   color: #2d3134;
 }
@@ -239,47 +239,58 @@
 }
 
 /* SEARCHBAR: START */
-.search-form {
+.box {
   display: flex;
   justify-content: center;
+  margin: 0 0 140px 0;
+}
+.box-container {
+  width: 749px;
+  height: 114px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-evenly;
   align-items: center;
-  margin: 0 auto 100px auto;
-  gap: 40px;
-  max-width: 749px;
-  min-height: 114px;
+  padding: 18px 26px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  gap: 32px;
+}
+.box-item {
+  display: flex;
+  flex-direction: column;
+}
+.box-item label {
+  font-size: 16px;
+  font-weight: 600;
+  color: #0a192d;
+}
+.box-item select {
+  margin-top: 5px;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 14px;
+  color: #697280;
+  cursor: pointer;
+}
+
+.box-item select option {
+  border: none;
+  outline: none;
+}
+.btn-search {
+  background-color: #132742;
+  color: #ffffff;
+  border: none;
   border-radius: 8px;
-  box-shadow: 1px 1px 5px #aaaaaa;
-  label {
-    font-size: 16px;
-    font-weight: 600;
-  }
-  .search-field {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    select {
-      border: none;
-      left: 0;
-      font-size: 14px;
-      color: #697280;
-    }
-  }
-  .search-but {
-    position: relative;
-    i {
-      font-size: 14px;
-      position: absolute;
-      top: 41%;
-      left: 23%;
-    }
-  }
-  button {
-    width: 170px;
-    height: 64px;
-    background-color: #132742;
-    color: #fff;
-    border-radius: 8px;
-  }
+  padding: 12px 28px;
+  font-weight: 700;
+  gap: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+button:hover {
+  background-color: #132761;
 }
 /* SEARCHBAR: END */
 
@@ -293,8 +304,10 @@
 }
 .tour-card {
   position: relative;
-  width: 565px;
+  max-width: 565px;
   height: 473px;
+  border-radius: 12px;
+  overflow: hidden;
   .tour-desc {
     width: 100%;
     position: absolute;
@@ -318,10 +331,10 @@
     color: #676a6c;
   }
 }
+
 .tour-card img {
   width: 100%;
   height: 100%;
-  border-radius: 12px;
   object-fit: cover;
   margin-bottom: 16px;
 }
@@ -442,7 +455,57 @@
 @media (max-width: 992px) {
   .main-tour {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(565px, 1fr));
+    gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
     place-items: center;
+    .tour-card {
+      width: 400px;
+    }
+  }
+
+  footer {
+    .footer-bottom {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: start;
+      gap: 20px;
+      height: auto;
+      .footer-menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 10px;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .main-tour {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(576px, 1fr));
+    place-items: center;
+    .tour-card {
+      width: 576px;
+    }
+  }
+
+  footer {
+    .footer-bottom {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: start;
+      gap: 20px;
+      height: auto;
+      .footer-menu nav ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 10px;
+        padding: 0;
+      }
+    }
   }
 }
