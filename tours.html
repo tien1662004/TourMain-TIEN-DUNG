@@ -25,8 +25,8 @@
     />
 
     <!-- CSS components  -->
-    <link rel="stylesheet" href="./assets/styles/header.css" />
-    <link rel="stylesheet" href="./assets/styles/footer.css" />
+    <link rel="stylesheet" href="./assets/styles/components/header-index.css" />
+    <link rel="stylesheet" href="./assets/styles/components/footer.css" />
 
     <!-- CSS main -->
     <link rel="stylesheet" href="./assets/styles/tours.css" />
@@ -34,64 +34,78 @@
 
   <body>
     <header class="header container">
-      <nav class="menu">
-        <div class="navbar">
-          <div class="logo">
-            <div class="logo-circle">ST</div>
-            <span>Safe Tour</span>
-          </div>
-          <a href="#" class="btn-contact">Contact us</a>
-        </div>
+      <div class="site-header-bar" role="navigation" aria-label="Primary">
+        <a class="brand" href="#">
+          <img
+            class="brand-logo"
+            src="./assets/img/logo.png"
+            alt="Safe Tour logo"
+          />
+          <p class="brand-name">Safe Tour<span class="brand-dot">.</span></p>
+        </a>
 
-        <ul class="nav-links">
-          <li><a href="./index.html">Home</a></li>
-          <li><a href="./about.html">About</a></li>
-          <li><a href="./destions.html">Destinations</a></li>
-          <li><a href="./blog.html">Blog</a></li>
-          <li><a href="./tours.html">Pages</a></li>
-        </ul>
-      </nav>
+        <nav id="main-nav" class="nav">
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a class="nav-linkk" href="./index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-linkk" href="./about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-linkk" href="./destions.html">Destinations</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-linkk" href="./blog.html">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-linkk" href="./tours.html">Pages</a>
+            </li>
+          </ul>
+        </nav>
+
+        <button class="btt-secondary">
+          <a href="./contact.html">Contact us</a>
+        </button>
+      </div>
       <section class="hero">
         <img src="./assets/img/blog/Shapes.png" alt="" />
         <h1>Tour</h1>
       </section>
 
       <!-- Search Bar -->
-      <section id="search" class="search container" aria-label="Search tours">
-        <form class="search-form">
-          <div class="search-field">
-            <label class="search-label" for="location">Location</label>
-            <select class="search-select" id="location" name="location">
-              <option value="bali">Bali, Indonesia</option>
-              <option value="bangkok">Bangkok, Thailand</option>
-              <option value="tokyo">Tokyo, Japan</option>
+      <section class="box">
+        <div class="box-container container">
+          <div class="box-item">
+            <label>Location</label>
+            <select>
+              <option>Bali, Indonesia</option>
+              <option>Hanoi, Vietnam</option>
+              <option>Tokyo, Japan</option>
             </select>
           </div>
-
-          <div class="search-field">
-            <label class="search-label" for="city">City</label>
-            <select class="search-select" id="city" name="city">
-              <option value="prambanan">Prambanan</option>
-              <option value="ubud">Ubud</option>
+          <div class="box-item">
+            <label>City</label>
+            <select>
+              <option>Prambanan</option>
+              <option>Ubud</option>
+              <option>Jakarta</option>
             </select>
           </div>
-
-          <div class="search-field">
-            <label class="search-label" for="guests">Guests</label>
-            <select class="search-select" id="guests" name="guests">
-              <option value="2">2 Persons</option>
-              <option value="4">4 Persons</option>
-              <option value="8">8 Persons</option>
+          <div class="box-item">
+            <label>Guest</label>
+            <select>
+              <option>8 Persons</option>
+              <option>2 Persons</option>
+              <option>4 Persons</option>
+              <option>10 Persons</option>
             </select>
           </div>
-
-          <div class="search-but">
-            <i class="fa-solid fa-magnifying-glass" style="color: #ffffff"></i>
-            <button class="search-submit" type="submit">Search</button>
-          </div>
-        </form>
+          <button class="btn-search">
+            <i class="fa fa-search"></i> Search
+          </button>
+        </div>
       </section>
-    </header>
     </header>
 
     <!-- Main tour -->
@@ -99,73 +113,61 @@
       <div class="tour-card">
         <img src="./assets/img/tour1.png" alt="" />
         <div class="tour-desc">
-            <h2>Indonesia</h2>
-            <div class="tour-price">
-                <p>
-                    9 days
-                </p>
-                <h3>$6,500</h3>
-            </div>
+          <h2>Indonesia</h2>
+          <div class="tour-price">
+            <p>9 days</p>
+            <h3>$6,500</h3>
+          </div>
         </div>
       </div>
       <div class="tour-card">
         <img src="./assets/img/tour2.png" alt="" />
         <div class="tour-desc">
-            <h2>Thiland</h2>
-            <div class="tour-price">
-                <p>
-                    9 days
-                </p>
-                <h3>$6,500</h3>
-            </div>
+          <h2>Thiland</h2>
+          <div class="tour-price">
+            <p>9 days</p>
+            <h3>$6,500</h3>
+          </div>
         </div>
       </div>
       <div class="tour-card">
         <img src="./assets/img/tour3.png" alt="" />
         <div class="tour-desc">
-            <h2>Dubai</h2>
-            <div class="tour-price">
-                <p>
-                    9 days
-                </p>
-                <h3>$6,500</h3>
-            </div>
+          <h2>Dubai</h2>
+          <div class="tour-price">
+            <p>9 days</p>
+            <h3>$6,500</h3>
+          </div>
         </div>
       </div>
       <div class="tour-card">
         <img src="./assets/img/tour4.png" alt="" />
         <div class="tour-desc">
-            <h2>Maldives</h2>
-            <div class="tour-price">
-                <p>
-                    9 days
-                </p>
-                <h3>$6,500</h3>
-            </div>
+          <h2>Maldives</h2>
+          <div class="tour-price">
+            <p>9 days</p>
+            <h3>$6,500</h3>
+          </div>
         </div>
       </div>
       <div class="tour-card">
         <img src="./assets/img/tour5.png" alt="" />
         <div class="tour-desc">
-            <h2>Dubai</h2>
-            <div class="tour-price">
-                <p>
-                    9 days
-                </p>
-                <h3>$6,500</h3>
-            </div>
+          <h2>Dubai</h2>
+          <div class="tour-price">
+            <p>9 days</p>
+            <h3>$6,500</h3>
+          </div>
         </div>
       </div>
       <div class="tour-card">
         <img src="./assets/img/tour6.png" alt="" />
         <div class="tour-desc">
-            <h2>Bangladesh</h2>
-            <div class="tour-price">
-                <p>
-                    9 days
-                </p>
-                <h3>$6,500</h3>
-            </div>
+          <h2>Bangladesh</h2>
+          <div class="tour-price">
+            <p>9 days</p>
+            <h3>$6,500</h3>
+          </div>
         </div>
       </div>
     </main>
@@ -215,13 +217,23 @@
           <span>Safe Tour</span>
         </div>
 
-        <ul class="footer-menu">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Destinations</a></li>
-          <li><a href="#">Blogs</a></li>
-          <li><a href="#">Pages</a></li>
-        </ul>
+        <div class="footer-menu">
+          <li>
+            <a href="./index.html">Home</a>
+          </li>
+          <li>
+            <a href="./about.html">About</a>
+          </li>
+          <li>
+            <a href="./destions.html">Destinations</a>
+          </li>
+          <li>
+            <a href="./blog.html">Blog</a>
+          </li>
+          <li>
+            <a href="./tours.html">Pages</a>
+          </li>
+        </div>
         <div class="footer-icon">
           <a href="#"><i class="fab fa-facebook-f"></i></a>
           <a href="#"><i class="fab fa-instagram"></i></a>

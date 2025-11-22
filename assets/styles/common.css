@@ -14,6 +14,10 @@ html {
   font-size: 16px;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 a {
   text-decoration: none;
 }
@@ -33,13 +37,22 @@ img {
   border: none;
   border-radius: 8px;
   color: #fff;
+  margin: 24px 0;
 }
 
 .btt-primary {
   background-color: var(--primary-color);
   height: 66px;
+  font-weight: 700;
+}
+.btt-primary:hover {
+  background-color: orange;
 }
 
 .btt-secondary {
   background-color: var(--scd-color);
+  font-weight: 700;
+}
+.btt-secondary:hover {
+  background-color: #31c3f4;
 }

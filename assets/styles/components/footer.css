@@ -33,6 +33,8 @@
     color: #676a6c;
     font-size: 12px;
     transition: color 0.3s;
+    font-weight: 500;
+    font-size: 12px;
   }
 }
 .footer-top {
@@ -82,4 +84,8 @@
 
 .brand-dot {
   color: var(--primary-color);
+}
+
+.footer-colum ul li a:hover {
+  color: var(--scd-color);
 }
