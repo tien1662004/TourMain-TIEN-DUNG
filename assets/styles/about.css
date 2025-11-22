@@ -10,7 +10,6 @@
 .menu {
   position: relative;
   padding: 32px 135px;
-  backdrop-filter: blur(5px);
   width: 100%;
   top: 0;
   z-index: 10;

@@ -6,7 +6,6 @@
 }
 .menu {
   padding: 32px 135px;
-  backdrop-filter: blur(10px);
   opacity: 1;
   width: 100%;
   top: 0;
@@ -118,13 +117,10 @@
 .blog-left img {
   width: 100%;
   height: auto;
-  filter: grayscale(50%) brightness(0.9) contrast(1);
   border-radius: 12px;
 }
 .blog-left img:hover {
-  filter: grayscale(0%) brightness(1.1) contrast(1.2);
   transform: scale(1.04);
-  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.2);
 }
 .blog-left h2 {
   margin-top: 30px;
@@ -175,12 +171,9 @@
   height: 90px;
   object-fit: cover;
   border-radius: 8px;
-  filter: brightness(0.95) contrast(1);
 }
 .item img:hover {
   transform: scale(1.1);
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.18);
-  filter: brightness(1.1) contrast(1.1);
 }
 .item p {
   font-size: 20px;
@@ -219,7 +212,6 @@
 /* Hiệu ứng hover CHỈ ẢNH */
 .blog-card:hover .item-img img {
   transform: scale(1.05) rotate(-1deg);
-  filter: brightness(1.1) contrast(1.2);
 }
 
 /* TEXT KHÔNG BỊ ẢNH HƯỞNG */
@@ -265,8 +257,8 @@
 .btn:hover {
   transform: translateY(-3px) scale(1.05);
   box-shadow: 0 8px 18px rgba(255, 123, 41, 0.55);
+  border-radius: 12px;
 }
-border-radius: 12px;
 
 img {
   transition: transform 0.4s ease, box-shadow 0.4s ease, filter 0.4s ease;

@@ -9,7 +9,6 @@
 .menu {
   position: relative;
   padding: 32px 135px;
-  backdrop-filter: blur(5px);
   width: 100%;
   top: 0;
   z-index: 10;
@@ -167,92 +166,94 @@
 .destions {
   text-align: center;
   padding: 140px 146px;
-.destions {
-  text-align: center;
-  padding: 140px 146px;
-}
-.grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 30px;
-  justify-content: center;
-.grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 30px;
-  justify-content: center;
-}
-.card {
-  border: none;
-  display: flex;
-  flex-direction: column;
-  text-align: left;
-  cursor: pointer;
-}
-
-.card img {
-  width: 100%;
-  height: 180px;
-  object-fit: cover;
-  border-radius: 8px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-.card:hover img {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
-}
-.card p {
-  margin-top: 20px;
-  font-size: 24px;
-  font-weight: 600;
-  color: #2d3134;
-}
-.btn {
-  margin-top: 80px;
-  background: linear-gradient(135deg, #ff7b29, #ff9f5a);
-  font-size: 18px;
-  color: white;
-  cursor: pointer;
-  border: none;
-  padding: 12px 32px;
-  border-radius: 12px;
-  transition: 0.3s ease;
-  box-shadow: 0 4px 12px rgba(255, 123, 41, 0.4);
-}
-
-.btn:hover {
-  transform: translateY(-3px) scale(1.05);
-  box-shadow: 0 8px 18px rgba(255, 123, 41, 0.55);
-}
-img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-}
-.card {
-  overflow: hidden;
-  border-radius: 12px;
-}
-
-.card img {
-  transition: transform 0.4s ease;
-}
-
-.card:hover img {
-  transform: scale(1.08);
-}
-@media (max-width: 576px) {
-  .card img {
-    height: 240px; /* hình đầy đặn hơn */
-    object-fit: cover;
+  .destions {
+    text-align: center;
+    padding: 140px 146px;
   }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    justify-content: center;
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 30px;
+      justify-content: center;
+    }
+    .card {
+      border: none;
+      display: flex;
+      flex-direction: column;
+      text-align: left;
+      cursor: pointer;
+    }
 
-  .hero h1 {
-    font-size: 42px;
-  }
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 8px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .card:hover img {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+    }
+    .card p {
+      margin-top: 20px;
+      font-size: 24px;
+      font-weight: 600;
+      color: #2d3134;
+    }
+    .btn {
+      margin-top: 80px;
+      background: linear-gradient(135deg, #ff7b29, #ff9f5a);
+      font-size: 18px;
+      color: white;
+      cursor: pointer;
+      border: none;
+      padding: 12px 32px;
+      border-radius: 12px;
+      transition: 0.3s ease;
+      box-shadow: 0 4px 12px rgba(255, 123, 41, 0.4);
+    }
 
-  .hero img {
-    width: 100%;
-    height: auto;
+    .btn:hover {
+      transform: translateY(-3px) scale(1.05);
+      box-shadow: 0 8px 18px rgba(255, 123, 41, 0.55);
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+    .card {
+      overflow: hidden;
+      border-radius: 12px;
+    }
+
+    .card img {
+      transition: transform 0.4s ease;
+    }
+
+    .card:hover img {
+      transform: scale(1.08);
+    }
+    @media (max-width: 576px) {
+      .card img {
+        height: 240px; /* hình đầy đặn hơn */
+        object-fit: cover;
+      }
+
+      .hero h1 {
+        font-size: 42px;
+      }
+
+      .hero img {
+        width: 100%;
+        height: auto;
+      }
+    }
   }
 }

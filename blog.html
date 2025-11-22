@@ -1,227 +1,247 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
+    <!-- CSS reset, common -->
+    <link rel="stylesheet" href="./assets/styles/reset.css" />
+    <link rel="stylesheet" href="./assets/styles/common.css" />
 
-  <!-- CSS reset, common -->
-  <link rel="stylesheet" href="./assets/styles/reset.css" />
-  <link rel="stylesheet" href="./assets/styles/common.css" />
+    <!-- CSS libraries -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
-  <!-- CSS libraries -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- CSS components  -->
+    <link rel="stylesheet" href="./assets/styles/components/header.css" />
+    <link rel="stylesheet" href="./assets/styles/components/footer.css" />
 
-  <!-- CSS components  -->
-  <link rel="stylesheet" href="./assets/styles/components/header.css" />
-  <link rel="stylesheet" href="./assets/styles/components/footer.css" />
+    <!-- CSS main -->
+    <link rel="stylesheet" href="./assets/styles/blog.css" />
+  </head>
 
-  <!-- CSS main -->
-  <link rel="stylesheet" href="./assets/styles/blog.css" />
-</head>
+  <body>
+    <header class="header">
+      <nav class="menu">
+        <div class="navbar">
+          <div class="logo">
+            <div class="logo-circle">ST</div>
+            <span>Safe Tour</span>
+          </div>
+          <a href="./contact.html" class="btn-contact">Contact us</a>
+        </div>
 
-<body>
-  <header class="header">
-    <nav class="menu">
-      <div class="navbar">
-        <div class="logo">
+        <ul class="nav-links">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./about.html">About</a></li>
+          <li><a href="./destions.html">Destinations</a></li>
+          <li><a href="./blog.html">Blog</a></li>
+          <li><a href="./tours.html">Pages</a></li>
+        </ul>
+      </nav>
+      <section class="hero">
+        <img src="./assets/img/blog/Shapes.png" alt="" />
+        <h1>Welcome to our Travel Blog</h1>
+      </section>
+    </header>
+
+    <section class="blog-section">
+      <div class="blog-left">
+        <img src="./assets/img/blog/1.png" alt="" />
+        <h2>
+          Exploring Argentina and <br />
+          Chile by Bus
+        </h2>
+      </div>
+      <div class="blog-right">
+        <div class="box">
+          <input type="text" placeholder="Search Blog" />
+          <button>Search</button>
+        </div>
+
+        <h3>Recent Blog</h3>
+        <div class="item">
+          <img src="./assets/img/blog/2.png" alt="" />
+          <p>
+            7 Tips For Nomads On A <br />
+            Budget Trips
+          </p>
+        </div>
+        <div class="item">
+          <img src="./assets/img/blog/3.png" alt="" />
+          <p>
+            7 Tips For Nomads On A<br />
+            Budget Trips
+          </p>
+        </div>
+        <div class="item">
+          <img src="./assets/img/blog/4.png" alt="" />
+          <p>
+            7 Tips For Nomads On A<br />
+            Budget Trips
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <main class="main-blog">
+      <div class="blog-card">
+        <div class="item-img">
+          <a href="./blog-detail.html">
+            <img src="./assets/img/blog/5.png" alt="" />
+          </a>
+        </div>
+
+        <h3>On the Shores of a Pink Lake in Australia</h3>
+        <p>
+          Meh synth Schlitz, tempor duis single-origin coffee ea next level
+          ethnic fingerstache fanny pack nostrud. Photo booth anim 8-bit hella,
+          PBR 3 wolf moon beard Helvetica. Salvia esse nihil...
+        </p>
+        <a href="">Read more</a>
+      </div>
+      <div class="blog-card">
+        <div class="item-img">
+          <img src="./assets/img/blog/6.png" alt="" />
+        </div>
+
+        <h3>On the Shores of a Pink Lake in Australia</h3>
+        <p>
+          Meh synth Schlitz, tempor duis single-origin coffee ea next level
+          ethnic fingerstache fanny pack nostrud. Photo booth anim 8-bit hella,
+          PBR 3 wolf moon beard Helvetica. Salvia esse nihil...
+        </p>
+        <a href="">Read more</a>
+      </div>
+      <div class="blog-card">
+        <div class="item-img">
+          <img src="./assets/img/blog/7.png" alt="" />
+        </div>
+
+        <h3>On the Shores of a Pink Lake in Australia</h3>
+        <p>
+          Meh synth Schlitz, tempor duis single-origin coffee ea next level
+          ethnic fingerstache fanny pack nostrud. Photo booth anim 8-bit hella,
+          PBR 3 wolf moon beard Helvetica. Salvia esse nihil...
+        </p>
+        <a href="">Read more</a>
+      </div>
+      <div class="blog-card">
+        <div class="item-img">
+          <img src="./assets/img/blog/8.png" alt="" />
+        </div>
+
+        <h3>On the Shores of a Pink Lake in Australia</h3>
+        <p>
+          Meh synth Schlitz, tempor duis single-origin coffee ea next level
+          ethnic fingerstache fanny pack nostrud. Photo booth anim 8-bit hella,
+          PBR 3 wolf moon beard Helvetica. Salvia esse nihil...
+        </p>
+        <a href="">Read more</a>
+      </div>
+      <div class="blog-card">
+        <div class="item-img">
+          <img src="./assets/img/blog/9.png" alt="" />
+        </div>
+
+        <h3>On the Shores of a Pink Lake in Australia</h3>
+        <p>
+          Meh synth Schlitz, tempor duis single-origin coffee ea next level
+          ethnic fingerstache fanny pack nostrud. Photo booth anim 8-bit hella,
+          PBR 3 wolf moon beard Helvetica. Salvia esse nihil...
+        </p>
+        <a href="">Read more</a>
+      </div>
+      <div class="blog-card">
+        <div class="item-img">
+          <img src="./assets/img/blog/10.png" alt="" />
+        </div>
+
+        <h3>On the Shores of a Pink Lake in Australia</h3>
+        <p>
+          Meh synth Schlitz, tempor duis single-origin coffee ea next level
+          ethnic fingerstache fanny pack nostrud. Photo booth anim 8-bit hella,
+          PBR 3 wolf moon beard Helvetica. Salvia esse nihil...
+        </p>
+        <a href="">Read more</a>
+      </div>
+    </main>
+    <div class="blog-btn">
+      <button class="btn">See more</button>
+    </div>
+    <footer class="footer">
+      <div class="footer-top">
+        <div class="footer-colum">
+          <h3>Resources</h3>
+          <ul>
+            <li><a href="#">Download</a></li>
+            <li><a href="#">Help Center</a></li>
+            <li><a href="#">Guide Book</a></li>
+            <li><a href="#">App Directory</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-colum">
+          <h3>Travellers</h3>
+          <ul>
+            <li><a href="#">Why Travellers</a></li>
+            <li><a href="#">Enterprice</a></li>
+            <li><a href="#">Customer Stories</a></li>
+            <li><a href="#">Instagram post</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-colum">
+          <h3>Company</h3>
+          <ul>
+            <li><a href="#">Travelling</a></li>
+            <li><a href="#">About Locato</a></li>
+            <li><a href="#">Success</a></li>
+            <li><a href="#">Information</a></li>
+          </ul>
+        </div>
+        <div class="footer-colum">
+          <h3>Get in Touch</h3>
+          <p>Feel free to get in touch with us vai email</p>
+          <span>email@gmail.com</span>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="footer-logo">
           <div class="logo-circle">ST</div>
           <span>Safe Tour</span>
         </div>
-        <a href="#" class="btn-contact">Contact us</a>
-      </div>
 
-      <ul class="nav-links">
-        <li><a href="./index.html">Home</a></li>
-        <li><a href="./about.html">About</a></li>
-        <li><a href="./destions.html">Destinations</a></li>
-        <li><a href="./blog.html">Blog</a></li>
-        <li><a href="./tours.html">Pages</a></li>
-      </ul>
-    </nav>
-    <section class="hero">
-      <img src="./assets/img/blog/Shapes.png" alt="">
-      <h1>Welcome to our Travel Blog</h1>
-    </section>
-  </header>
-
-  <section class="blog-section">
-    <div class="blog-left">
-      <img src="./assets/img/blog/1.png" alt="">
-      <h2>Exploring Argentina and <br> Chile by Bus</h2>
-    </div>
-    <div class="blog-right">
-      <div class="box">
-        <input type="text" placeholder="Search Blog">
-        <button>Search</button>
-      </div>
-
-      <h3>Recent Blog</h3>
-      <div class="item">
-        <img src="./assets/img/blog/2.png" alt="">
-        <p>7 Tips For Nomads On A <br> Budget Trips</p>
-      </div>
-      <div class="item">
-        <img src="./assets/img/blog/3.png" alt="">
-        <p>7 Tips For Nomads On A<br> Budget Trips</p>
-      </div>
-      <div class="item">
-        <img src="./assets/img/blog/4.png" alt="">
-        <p>7 Tips For Nomads On A<br> Budget Trips</p>
-      </div>
-    </div>
-  </section>
-
-  <main class="main-blog">
-
-    <div class="blog-card">
-      <div class="item-img">
-        <img src="./assets/img/blog/5.png" alt="">
-      </div>
-
-      <h3>On the Shores of a Pink Lake in Australia</h3>
-      <p>
-        Meh synth Schlitz, tempor duis single-origin coffee ea next level ethnic
-        fingerstache fanny pack nostrud. Photo booth anim 8-bit hella, PBR 3 wolf
-        moon beard Helvetica. Salvia esse nihil...
-      </p>
-      <a href="">Read more</a>
-    </div>
-    <div class="blog-card">
-      <div class="item-img">
-        <img src="./assets/img/blog/6.png" alt="">
-      </div>
-
-      <h3>On the Shores of a Pink Lake in Australia</h3>
-      <p>
-        Meh synth Schlitz, tempor duis single-origin coffee ea next level ethnic
-        fingerstache fanny pack nostrud. Photo booth anim 8-bit hella, PBR 3 wolf
-        moon beard Helvetica. Salvia esse nihil...
-      </p>
-      <a href="">Read more</a>
-    </div>
-    <div class="blog-card">
-      <div class="item-img">
-        <img src="./assets/img/blog/7.png" alt="">
-      </div>
-
-      <h3>On the Shores of a Pink Lake in Australia</h3>
-      <p>
-        Meh synth Schlitz, tempor duis single-origin coffee ea next level ethnic
-        fingerstache fanny pack nostrud. Photo booth anim 8-bit hella, PBR 3 wolf
-        moon beard Helvetica. Salvia esse nihil...
-      </p>
-      <a href="">Read more</a>
-    </div>
-    <div class="blog-card">
-      <div class="item-img">
-        <img src="./assets/img/blog/8.png" alt="">
-      </div>
-
-      <h3>On the Shores of a Pink Lake in Australia</h3>
-      <p>
-        Meh synth Schlitz, tempor duis single-origin coffee ea next level ethnic
-        fingerstache fanny pack nostrud. Photo booth anim 8-bit hella, PBR 3 wolf
-        moon beard Helvetica. Salvia esse nihil...
-      </p>
-      <a href="">Read more</a>
-    </div>
-    <div class="blog-card">
-      <div class="item-img">
-        <img src="./assets/img/blog/9.png" alt="">
-      </div>
-
-      <h3>On the Shores of a Pink Lake in Australia</h3>
-      <p>
-        Meh synth Schlitz, tempor duis single-origin coffee ea next level ethnic
-        fingerstache fanny pack nostrud. Photo booth anim 8-bit hella, PBR 3 wolf
-        moon beard Helvetica. Salvia esse nihil...
-      </p>
-      <a href="">Read more</a>
-    </div>
-    <div class="blog-card">
-      <div class="item-img">
-        <img src="./assets/img/blog/10.png" alt="">
-      </div>
-
-      <h3>On the Shores of a Pink Lake in Australia</h3>
-      <p>
-        Meh synth Schlitz, tempor duis single-origin coffee ea next level ethnic
-        fingerstache fanny pack nostrud. Photo booth anim 8-bit hella, PBR 3 wolf
-        moon beard Helvetica. Salvia esse nihil...
-      </p>
-      <a href="">Read more</a>
-    </div>
-
-  </main>
-  <div class="blog-btn">
-    <button class="btn">See more</button>
-  </div>
-  <footer class="footer">
-    <div class="footer-top">
-      <div class="footer-colum">
-        <h3>Resources</h3>
-        <ul>
-          <li><a href="#">Download</a></li>
-          <li><a href="#">Help Center</a></li>
-          <li><a href="#">Guide Book</a></li>
-          <li><a href="#">App Directory</a></li>
+        <ul class="footer-menu">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Destinations</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Pages</a></li>
         </ul>
+        <div class="footer-icon">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
       </div>
-
-      <div class="footer-colum">
-        <h3>Travellers</h3>
-        <ul>
-          <li><a href="#">Why Travellers</a></li>
-          <li><a href="#">Enterprice</a></li>
-          <li><a href="#">Customer Stories</a></li>
-          <li><a href="#">Instagram post</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-colum">
-        <h3>Company</h3>
-        <ul>
-          <li><a href="#">Travelling</a></li>
-          <li><a href="#">About Locato</a></li>
-          <li><a href="#">Success</a></li>
-          <li><a href="#">Information</a></li>
-        </ul>
-      </div>
-      <div class="footer-colum">
-        <h3>Get in Touch</h3>
-        <p>Feel free to get in touch with us vai email</p>
-        <span>email@gmail.com</span>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <div class="footer-logo">
-        <div class="logo-circle">ST</div>
-        <span>Safe Tour</span>
-      </div>
-
-      <ul class="footer-menu">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Destinations</a></li>
-        <li><a href="#">Blog</a></li>
-        <li><a href="#">Pages</a></li>
-      </ul>
-      <div class="footer-icon">
-        <a href="#"><i class="fab fa-facebook-f"></i></a>
-        <a href="#"><i class="fab fa-instagram"></i></a>
-        <a href="#"><i class="fab fa-twitter"></i></a>
-      </div>
-    </div>
-  </footer>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-    crossorigin="anonymous"></script>
-</body>
-
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
