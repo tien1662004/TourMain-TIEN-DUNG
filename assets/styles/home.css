@@ -861,6 +861,7 @@ button:hover {
       outline: none;
       padding: 0 60px 0 20px;
       width: 100%;
+      border-radius: 20px;
       height: 60px;
     }
     input::placeholder {
@@ -896,7 +897,8 @@ button:hover {
 .ellipse {
   width: 64px;
   height: 33px;
-  right: 20px;
+  right: 10%;
+  top: 35%;
   position: absolute;
 }
 /* Newsletter: END */
@@ -1256,7 +1258,7 @@ button:hover {
       align-items: start;
       gap: 20px;
       height: auto;
-      .footer-menu nav ul {
+      .footer-menu {
         display: flex;
         flex-direction: column;
         justify-content: flex-start;

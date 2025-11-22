@@ -45,11 +45,19 @@
   position: absolute;
   left: 0;
   bottom: 0px;
+  left: 0;
+  bottom: 0px;
   width: 0;
+  height: 2px;
+  background-color: #ff7b29;
   height: 2px;
   background-color: #ff7b29;
   border-radius: 10px;
   transition: width 0.3s ease;
+}
+.nav-links a:hover::after,
+.nav-links a.active::after {
+  width: 15px;
 }
 .nav-links a:hover::after,
 .nav-links a.active::after {
@@ -105,11 +113,69 @@
     color: white;
   }
 }
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.logo-circle {
+  background-color: #ff6b00;
+  color: #fff;
+  font-weight: bold;
+  font-size: 14px;
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.btn-contact {
+  background-color: #20c3ef;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: background 0.3s;
+}
+.btn-contact:hover {
+  background-color: #15a6cb;
+}
+.hero {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero h1 {
+  font-size: 136px;
+  font-weight: 700;
+  color: #ff6b00;
+  text-align: center;
+  p {
+    font-size: 24px;
+    font-weight: 700;
+    color: white;
+  }
+}
 /* main */
 .destions {
   text-align: center;
   padding: 140px 146px;
+.destions {
+  text-align: center;
+  padding: 140px 146px;
 }
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  justify-content: center;
 .grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
